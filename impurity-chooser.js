@@ -32,27 +32,43 @@
   let playing = !reduced;
   let previous = null;
   let dropped = false, stageTime = 0, selectedProtocol = 'quenched';
+  let awaitingDrop = false, previewProtocol = null, previewInteraction = null;
 
   function drawStage() {
     const ctx = pipe.getContext('2d');
     const fall = reduced ? 1 : Math.min(1,stageTime/SETTINGS.dropTime);
     const movingTime = Math.max(0,stageTime-SETTINGS.dropTime);
-    const m = motion(selectedProtocol,movingTime);
+    const protocol = previewProtocol || selectedProtocol;
+    const m = motion(protocol,movingTime);
     const travel = dropped ? m.x-SETTINGS.startX : 0;
-    const camera = selectedProtocol==='driven' ? SETTINGS.driftSpeed*movingTime : Math.max(0,travel-SETTINGS.stageTravel);
+    const camera = protocol==='driven' ? SETTINGS.driftSpeed*movingTime : Math.max(0,travel-SETTINGS.stageTravel);
     const x = SETTINGS.stageCenter+travel-camera;
     const y = dropped ? SETTINGS.stageStartY+(SETTINGS.tubeY+SETTINGS.stageOffset-SETTINGS.stageStartY)*fall*fall : SETTINGS.stageStartY;
     ctx.setTransform(SETTINGS.scale,0,0,SETTINGS.scale,0,0);
     ctx.clearRect(0,0,SETTINGS.width,SETTINGS.stageHeight);
-    ctx.save(); ctx.translate(0,SETTINGS.stageOffset); tube(ctx); ctx.restore();
-    for(let bx=SETTINGS.left-camera%SETTINGS.spacing;bx<SETTINGS.right;bx+=SETTINGS.spacing) {
-      if(bx>20 && (!dropped || fall<1 || Math.abs(bx-x)>25)) ball(ctx,bx,SETTINGS.tubeY+SETTINGS.stageOffset,SETTINGS.particleRadius);
+    const direction = previewInteraction==='repulsive' ? 1 : previewInteraction==='attractive' ? -1 : 0;
+    const surfaceY = bx => SETTINGS.tubeTop+SETTINGS.stageOffset+direction*SETTINGS.dipHeight*Math.exp(-(((bx-x)/SETTINGS.profileWidth)**2));
+    ctx.fillStyle=colors.tube; ctx.globalAlpha=SETTINGS.tubeOpacity;
+    for(let bx=SETTINGS.left;bx<SETTINGS.right;bx+=SETTINGS.pixelStep) {
+      const top=surfaceY(bx);
+      ctx.fillRect(bx,top,SETTINGS.pixelStep,SETTINGS.tubeBottom+SETTINGS.stageOffset-top);
+    }
+    ctx.globalAlpha=SETTINGS.edgeOpacity;
+    for(let bx=SETTINGS.left;bx<SETTINGS.right;bx+=SETTINGS.pixelStep) ctx.fillRect(bx,surfaceY(bx),SETTINGS.pixelStep,SETTINGS.pixelStep);
+    ctx.globalAlpha=1;
+    for(let row=0;row<SETTINGS.particleRows;row++) {
+      for(let bx=SETTINGS.left-camera%SETTINGS.spacing;bx<SETTINGS.right;bx+=SETTINGS.spacing) {
+        const distance=bx-x;
+        const shifted=bx+direction*SETTINGS.displacement*Math.tanh(distance/SETTINGS.profileWidth)*Math.exp(-Math.abs(distance)/(SETTINGS.profileWidth*2));
+        const py=surfaceY(shifted)+8+row*SETTINGS.rowSpacing;
+        if(shifted>20 && shifted<SETTINGS.right && (!dropped || fall<1 || Math.hypot(shifted-x,py-y)>25)) ball(ctx,shifted,py,SETTINGS.particleRadius);
+      }
     }
     trigger.style.left=`${x/SETTINGS.width*100}%`;
     trigger.style.top=`${y/SETTINGS.stageHeight*100}%`;
     if(dropped && fall>=1) {
       arrow(ctx,x,SETTINGS.stageArrowY,Math.sign(m.v)*Math.max(5,Math.abs(m.v)*SETTINGS.arrowScale),'v',colors.ink);
-      if(selectedProtocol==='driven') arrow(ctx,x+7,SETTINGS.stageForceY,SETTINGS.forceLength,'F',SETTINGS.particleColor);
+      if(protocol==='driven') arrow(ctx,x+7,SETTINGS.stageForceY,SETTINGS.forceLength,'F',SETTINGS.particleColor);
     }
   }
 
@@ -151,16 +167,27 @@
     protocols.hidden = false; trigger.setAttribute('aria-expanded','true'); restart();
   }
   trigger.addEventListener('click',()=>{
-    if(!dropped) { dropped=true; stageTime=reduced?SETTINGS.dropTime:0; }
-    openProtocols();
+    if(!dropped) {
+      dropped=true; stageTime=reduced?SETTINGS.dropTime:0; awaitingDrop=true;
+      status.textContent='Dropping into the Bose gas…';
+      restart();
+    } else if(!awaitingDrop) openProtocols();
+    if(awaitingDrop && reduced) {awaitingDrop=false;openProtocols();}
   });
   root.addEventListener('keydown',event=>{
     if(event.key==='Escape') {protocols.hidden=true; trigger.setAttribute('aria-expanded','false'); trigger.focus();}
   });
   for(const option of root.querySelectorAll('[data-protocol]')) {
+    function preview() {previewProtocol=option.dataset.protocol;stageTime=SETTINGS.dropTime;render();}
+    function clearPreview() {previewProtocol=null;render();}
+    option.addEventListener('pointerenter',preview);
+    option.addEventListener('focus',preview);
+    option.addEventListener('pointerleave',clearPreview);
+    option.addEventListener('blur',clearPreview);
     option.addEventListener('click',()=>{
       const protocol = option.dataset.protocol;
       selectedProtocol=protocol;
+      previewProtocol=null; previewInteraction=null;
       stageTime=SETTINGS.dropTime;
       protocols.hidden=true; trigger.setAttribute('aria-expanded','false');
       interactions.hidden=false;
@@ -169,6 +196,14 @@
       restart();
       interactions.querySelector('a').focus();
     });
+  }
+  for(const option of root.querySelectorAll('[data-interaction]')) {
+    const preview=()=>{previewInteraction=option.dataset.interaction;render();};
+    const clear=()=>{previewInteraction=null;render();};
+    option.addEventListener('pointerenter',preview);
+    option.addEventListener('focus',preview);
+    option.addEventListener('pointerleave',clear);
+    option.addEventListener('blur',clear);
   }
   pause.addEventListener('click',()=>{
     if(time>=SETTINGS.duration) time=0;
@@ -180,6 +215,10 @@
       const elapsed=Math.min(SETTINGS.maxFrame,(now-previous)/1000);
       time=Math.min(SETTINGS.duration,time+elapsed);
       if(dropped) stageTime+=elapsed;
+      if(awaitingDrop && stageTime>=SETTINGS.dropTime) {
+        awaitingDrop=false; openProtocols();
+        status.textContent='Quenched or Driven? Hover to preview, click to choose.';
+      }
       render();
     }
     previous=now; requestAnimationFrame(frame);
