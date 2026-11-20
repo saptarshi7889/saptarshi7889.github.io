@@ -37,7 +37,10 @@
       <div class="section-heading"><div><p class="eyebrow">SELECTED PROJECTS</p><h2 id="projects-title">1D Bose polaron GPE solver</h2></div><p>A C++17 library for the coupled Gross–Pitaevskii equation and impurity velocity, with fresh runs and compressed-checkpoint continuation.</p></div>
       <p class="project-intro">Choose an impurity protocol to explore its papers, recorded dynamics, and code libraries.</p>
       <div class="impurity-chooser" id="impurity-chooser" hidden>
-        <button class="impurity-trigger" id="impurity-trigger" type="button" aria-expanded="false" aria-controls="protocol-options">Impurity</button>
+        <div class="impurity-stage">
+          <canvas id="impurity-pipe" width="640" height="380" role="img" aria-label="A blue impurity drops into a pipe of red bosons when clicked, then follows the selected protocol."></canvas>
+          <button class="impurity-trigger" id="impurity-trigger" type="button" aria-expanded="false" aria-controls="protocol-options">Impurity</button>
+        </div>
         <div class="impurity-options" id="protocol-options" hidden>
           <button class="impurity-option" type="button" data-protocol="quenched"><span>Quenched <small>Constant Momentum</small></span><canvas width="640" height="280" data-motion="quenched" role="img" aria-label="Impurity slowing toward steady velocity through a Bose gas"></canvas></button>
           <button class="impurity-option" type="button" data-protocol="driven"><span>Driven <small>Constant Force</small></span><canvas width="640" height="280" data-motion="driven" role="img" aria-label="Impurity undergoing Bloch oscillations with drift under a constant force"></canvas></button>

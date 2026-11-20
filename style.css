@@ -1,9 +1,8 @@
 :root {
-  --impurity-red: #bd4039;
-  --impurity-red-edge: #7f2826;
-  --impurity-grey: #637173;
-  --impurity-grey-edge: #3d4b4d;
-  --impurity-shadow: 6px;
+  --impurity-blue: #365fe9;
+  --impurity-blue-edge: #243782;
+  --impurity-blue-light: #9ebaff;
+  --impurity-button-size: clamp(96px, 20%, 128px);
   --paper: #f7f5ee;
   --ink: #183f48;
   --muted: #54696b;
@@ -17,9 +16,9 @@
 /* Progressive protocol and interaction chooser. */
 .impurity-chooser { margin-top: 2rem; }
 .impurity-chooser [hidden], #protocol-fallback[hidden] { display: none; }
-.impurity-trigger { border: 2px solid var(--impurity-red-edge); border-radius: 4px; padding: 1rem 2rem; margin-bottom: var(--impurity-shadow); background: var(--impurity-red); color: var(--white); box-shadow: 0 var(--impurity-shadow) 0 var(--impurity-red-edge); font: 600 1.15rem ui-monospace, monospace; cursor: pointer; }
-.impurity-trigger.is-chosen { background: var(--impurity-grey); border-color: var(--impurity-grey-edge); box-shadow: 0 var(--impurity-shadow) 0 var(--impurity-grey-edge); }
-.impurity-trigger:active { transform: translateY(var(--impurity-shadow)); box-shadow: none; }
+.impurity-stage { position: relative; width: 100%; max-width: 640px; aspect-ratio: 320 / 190; min-height: 260px; }
+.impurity-stage > canvas { display: block; width: 100%; height: 100%; position: absolute; inset: 0; image-rendering: pixelated; }
+.impurity-trigger { position: absolute; left: 50%; top: 22%; width: var(--impurity-button-size); aspect-ratio: 1; border: 3px solid var(--impurity-blue-edge); border-radius: 50%; padding: 0; background: var(--impurity-blue); color: var(--white); box-shadow: inset 8px 8px 0 var(--impurity-blue-light), inset -10px -8px 0 var(--impurity-blue-edge); transform: translate(-50%, -50%); font: 600 1rem ui-monospace, monospace; cursor: pointer; text-shadow: 1px 1px var(--impurity-blue-edge); }
 .impurity-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
 .impurity-option { display: block; min-width: 0; padding: 1rem; border: 2px solid var(--line); border-radius: 3px; background: var(--white); color: var(--ink); text-decoration: none; text-align: left; font: 500 1rem ui-monospace, monospace; cursor: pointer; }
 .impurity-option:hover { border-color: var(--teal); background: var(--wash); }
