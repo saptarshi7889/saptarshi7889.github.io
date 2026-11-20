@@ -6,22 +6,21 @@
     spacing: 15, rows: 4, rowSpacing: 13, particleRadius: 3,
     radius: 13, impurityY: 108, profileWidth: 29, profileHeight: 27,
     displacement: 27, steadySpeed: 13, excessSpeed: 44, relaxation: 1.7,
-    driftSpeed: 11, oscillationSpeed: 45, period: 3, maxFrame: .1,
+    driftSpeed: 11, oscillationSpeed: 45, period: 3, duration: 7,
     pixel: 2, velocityY: 185, forceY: 40, forceLength: 50, arrowScale: .7,
     tubeOpacity: .1, edgeOpacity: .4, labelSize: 12,
     red: '#df5149', redLight: '#ffada0', redShade: '#953631',
     blue: '#365fe9', blueLight: '#9ebaff', blueShade: '#243782'
   };
   const canvas = document.getElementById('case-canvas');
-  const button = document.getElementById('case-pause');
   const ctx = canvas.getContext('2d');
   const protocol = canvas.dataset.protocol;
   const sign = canvas.dataset.interaction==='repulsive' ? 1 : -1;
   const style = getComputedStyle(canvas);
   const tube = style.getPropertyValue('--teal').trim();
   const ink = style.getPropertyValue('--ink').trim();
-  let playing = !matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let time = 0, previous = null;
+  const playing = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let time = 0, playback = 0, previous = null;
   function motion(t) {
     if(protocol==='quenched') return {
       x: C.steadySpeed*t+C.excessSpeed*C.relaxation*(1-Math.exp(-t/C.relaxation)),
@@ -81,14 +80,15 @@
     arrow(center,C.velocityY,Math.sign(m.v)*Math.max(5,Math.abs(m.v)*C.arrowScale),'v',ink);
     if(protocol==='driven') arrow(center+8,C.forceY,C.forceLength,'F',C.red);
   }
-  function controls() {button.textContent=playing?'Pause animation':'Play animation';}
-  button.addEventListener('click',()=>{playing=!playing;previous=null;controls();});
   function frame(now) {
-    if(playing && !document.hidden && previous!==null) {
-      time+=Math.min(C.maxFrame,(now-previous)/1000);
+    if(playing && previous!==null) {
+      const elapsed=Math.min((now-previous)/1000,C.duration-playback);
+      time+=elapsed; playback+=elapsed;
       render();
     }
-    previous=now;requestAnimationFrame(frame);
+    previous=now;
+    if(playing && playback<C.duration) requestAnimationFrame(frame);
   }
-  controls();render();requestAnimationFrame(frame);
+  render();
+  if(playing) requestAnimationFrame(frame);
 })();
