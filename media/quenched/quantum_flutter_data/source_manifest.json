@@ -1,0 +1,659 @@
+{
+  "archive_root": "/run/media/sap/RIdata/Data/Repulsive_impurity_simulation_data/Repulsive_Quenched",
+  "paper": "https://arxiv.org/pdf/2507.10402",
+  "completed_archive_scopes": {
+    "Different_coupling.tar.gz": [
+      "Entire archive"
+    ],
+    "Different_masses.tar.gz": [
+      "Different_masses/Actual/m0.125.tar.gz"
+    ]
+  },
+  "mass_ratio": 8.0,
+  "initial_velocity": 3.5,
+  "gamma": 0.1,
+  "final_time": 50.0,
+  "velocity_sources": {
+    "3.0": [
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G3/m0.125/dx5000/impurity_velocity_herm_G3m0.125V3.5dx0.0002dt0.01L1600_faster_finite_difference.dat",
+        "kind": "velocity",
+        "coupling": 3.0,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 0.0002,
+        "dt": 0.01,
+        "length": 1600.0,
+        "cache": "a2ce7700fb5d9540.npz",
+        "time_range": [
+          0.0,
+          50.0
+        ]
+      }
+    ],
+    "1.0": [
+      {
+        "archive": "Different_masses.tar.gz",
+        "member": "Different_masses/Actual/m0.125.tar.gz::m0.125/dx60000/impurity_velocity_herm_G1m0.125V3.5dx1.66667e-05dt0.01L1100_upwind_faster_finite_difference_contd_rep1_corrected.dat",
+        "kind": "velocity",
+        "coupling": 1.0,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1100.0,
+        "cache": "f6b79b021697d089.npz",
+        "time_range": [
+          10.0,
+          26.8
+        ]
+      },
+      {
+        "archive": "Different_masses.tar.gz",
+        "member": "Different_masses/Actual/m0.125.tar.gz::m0.125/dx60000/impurity_velocity_herm_G1m0.125V3.5dx1.66667e-05dt0.01L1100_faster_finite_difference.dat",
+        "kind": "velocity",
+        "coupling": 1.0,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1100.0,
+        "cache": "6c7cb9b0b36e27ca.npz",
+        "time_range": [
+          0.0,
+          10.1
+        ]
+      },
+      {
+        "archive": "Different_masses.tar.gz",
+        "member": "Different_masses/Actual/m0.125.tar.gz::m0.125/dx60000/impurity_velocity_herm_G1m0.125V3.5dx1.66667e-05dt0.01L1100_upwind_faster_finite_difference_contd_rep5_corrected.dat",
+        "kind": "velocity",
+        "coupling": 1.0,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1100.0,
+        "cache": "0222074fa497c126.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_masses.tar.gz",
+        "member": "Different_masses/Actual/m0.125.tar.gz::m0.125/dx60000/impurity_velocity_herm_G1m0.125V3.5dx1.66667e-05dt0.01L1100_upwind_faster_finite_difference_contd_rep3_corrected.dat",
+        "kind": "velocity",
+        "coupling": 1.0,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1100.0,
+        "cache": "9b022a4791623cb6.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_masses.tar.gz",
+        "member": "Different_masses/Actual/m0.125.tar.gz::m0.125/dx60000/impurity_velocity_herm_G1m0.125V3.5dx1.66667e-05dt0.01L1100_upwind_faster_finite_difference_contd_rep2_corrected.dat",
+        "kind": "velocity",
+        "coupling": 1.0,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1100.0,
+        "cache": "d893e768b23cb245.npz",
+        "time_range": [
+          25.0,
+          50.0
+        ]
+      },
+      {
+        "archive": "Different_masses.tar.gz",
+        "member": "Different_masses/Actual/m0.125.tar.gz::m0.125/dx60000/impurity_velocity_herm_G1m0.125V3.5dx1.66667e-05dt0.01L1100_upwind_faster_finite_difference_contd_rep4_corrected.dat",
+        "kind": "velocity",
+        "coupling": 1.0,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1100.0,
+        "cache": "660a6595fb14c406.npz",
+        "time_range": []
+      }
+    ],
+    "0.85": [
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.85/impurity_velocity_herm_G0.85m0.125V3.5dx1.66667e-05dt0.01L1600_upwind_faster_finite_difference_contd_rep2_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.85,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1600.0,
+        "cache": "5dcd257e7f56c14b.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.85/impurity_velocity_herm_G0.85m0.125V3.5dx1.66667e-05dt0.01L1600_faster_finite_difference.dat",
+        "kind": "velocity",
+        "coupling": 0.85,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1600.0,
+        "cache": "50ac7d7ae2eae73a.npz",
+        "time_range": [
+          0.0,
+          21.0
+        ]
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.85/impurity_velocity_herm_G0.85m0.125V3.5dx1.66667e-05dt0.01L1600_upwind_faster_finite_difference_contd_rep3_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.85,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1600.0,
+        "cache": "9da49cb39c790868.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.85/impurity_velocity_herm_G0.85m0.125V3.5dx1.66667e-05dt0.01L1600_upwind_faster_finite_difference_contd_rep1_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.85,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1600.0,
+        "cache": "f1a3e27c621f8e5d.npz",
+        "time_range": [
+          20.0,
+          50.0
+        ]
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.85/impurity_velocity_herm_G0.85m0.125V3.5dx1.66667e-05dt0.01L1600_upwind_faster_finite_difference_contd_rep4_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.85,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1600.0,
+        "cache": "67b5f1d50b722137.npz",
+        "time_range": []
+      }
+    ],
+    "0.75": [
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.75/m0.125/dx60000/impurity_velocity_herm_G0.75m0.125V3.5dx1.66667e-05dt0.01L1200_upwind_faster_finite_difference_contd_rep2_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.75,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1200.0,
+        "cache": "3cb919a9b26f1e11.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.75/m0.125/dx60000/impurity_velocity_herm_G0.75m0.125V3.5dx1.66667e-05dt0.01L1200_faster_finite_difference.dat",
+        "kind": "velocity",
+        "coupling": 0.75,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1200.0,
+        "cache": "95c035931cffe7c9.npz",
+        "time_range": [
+          0.0,
+          31.8
+        ]
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.75/m0.125/dx60000/impurity_velocity_herm_G0.75m0.125V3.5dx1.66667e-05dt0.01L1200_upwind_faster_finite_difference_contd_rep3_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.75,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1200.0,
+        "cache": "e9c580efc0a7d1e5.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.75/m0.125/dx60000/impurity_velocity_herm_G0.75m0.125V3.5dx1.66667e-05dt0.01L1200_upwind_faster_finite_difference_contd_rep1_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.75,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1200.0,
+        "cache": "bf60bd426d4b868c.npz",
+        "time_range": [
+          30.0,
+          50.0
+        ]
+      }
+    ],
+    "0.65": [
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.65/impurity_velocity_herm_G0.65m0.125V3.5dx1.66667e-05dt0.01L1600_upwind_faster_finite_difference_contd_rep1_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.65,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1600.0,
+        "cache": "f655fd45ba9b47d9.npz",
+        "time_range": [
+          20.0,
+          50.0
+        ]
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.65/impurity_velocity_herm_G0.65m0.125V3.5dx1.66667e-05dt0.01L1600_upwind_faster_finite_difference_contd_rep2_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.65,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1600.0,
+        "cache": "a11c12af8e343556.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.65/impurity_velocity_herm_G0.65m0.125V3.5dx1.66667e-05dt0.01L1600_faster_finite_difference.dat",
+        "kind": "velocity",
+        "coupling": 0.65,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 1600.0,
+        "cache": "c9892773041e5500.npz",
+        "time_range": [
+          0.0,
+          21.0
+        ]
+      }
+    ],
+    "0.5": [
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.5/m0.125/dx60000/impurity_velocity_herm_G0.5m0.125V3.5dx1.66667e-05dt0.01L2400_upwind_faster_finite_difference_contd_rep5_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.5,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 2400.0,
+        "cache": "41e09be41fa260b3.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.5/m0.125/dx60000/impurity_velocity_herm_G0.5m0.125V3.5dx1.66667e-05dt0.01L2400_upwind_faster_finite_difference_contd_rep3_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.5,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 2400.0,
+        "cache": "41b00e7171845f01.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.5/m0.125/dx60000/impurity_velocity_herm_G0.5m0.125V3.5dx1.66667e-05dt0.01L2400_faster_finite_difference.dat",
+        "kind": "velocity",
+        "coupling": 0.5,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 2400.0,
+        "cache": "b84f26287642f687.npz",
+        "time_range": [
+          0.0,
+          15.7
+        ]
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.5/m0.125/dx60000/impurity_velocity_herm_G0.5m0.125V3.5dx1.66667e-05dt0.01L2400_upwind_faster_finite_difference_contd_rep1_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.5,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 2400.0,
+        "cache": "44330085b092e65c.npz",
+        "time_range": [
+          15.0,
+          27.6
+        ]
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.5/m0.125/dx60000/impurity_velocity_herm_G0.5m0.125V3.5dx1.66667e-05dt0.01L2400_upwind_faster_finite_difference_contd_rep4_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.5,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 2400.0,
+        "cache": "45ea3b8ebc13f816.npz",
+        "time_range": []
+      },
+      {
+        "archive": "Different_coupling.tar.gz",
+        "member": "Different_coupling/G0.5/m0.125/dx60000/impurity_velocity_herm_G0.5m0.125V3.5dx1.66667e-05dt0.01L2400_upwind_faster_finite_difference_contd_rep2_corrected.dat",
+        "kind": "velocity",
+        "coupling": 0.5,
+        "mass_parameter": 0.125,
+        "initial_velocity": 3.5,
+        "dx": 1.66667e-05,
+        "dt": 0.01,
+        "length": 2400.0,
+        "cache": "7898e483c3a841cd.npz",
+        "time_range": [
+          27.5,
+          50.0
+        ]
+      }
+    ]
+  },
+  "density_coupling": 0.65,
+  "density_sources": [
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time2.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "6f602c5d956d7877.npz",
+      "time": 2.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "0fc12fda5b7c5dcd.npz",
+      "time": 5.0
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time7.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "d6052124da1eab92.npz",
+      "time": 7.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time10dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "055302cf4edcb0cb.npz",
+      "time": 10.0
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time12.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "e5d1a0753924bf7f.npz",
+      "time": 12.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time15dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "bb6b0dbd6d650c31.npz",
+      "time": 15.0
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time17.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "9ff93d7c677a042f.npz",
+      "time": 17.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time20dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "b84298f5d6bd9263.npz",
+      "time": 20.0
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time22.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "24321d46151b092a.npz",
+      "time": 22.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time25dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "843bc66d53a9cd7e.npz",
+      "time": 25.0
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time27.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "a06fb8b823f57fee.npz",
+      "time": 27.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time30dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "10129db8a19ab6d5.npz",
+      "time": 30.0
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time32.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "0b8092e012cb40cc.npz",
+      "time": 32.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time35dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "3634104e4e7d6bca.npz",
+      "time": 35.0
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time37.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "6a5264f17017a720.npz",
+      "time": 37.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time40dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "5c30305bbc64f440.npz",
+      "time": 40.0
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time42.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "7ff46025a98e5371.npz",
+      "time": 42.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time45dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "5d79fc552eaf5a02.npz",
+      "time": 45.0
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time47.5dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "6799e51095c0a9d9.npz",
+      "time": 47.5
+    },
+    {
+      "archive": "Different_coupling.tar.gz",
+      "member": "Different_coupling/G0.65/Phi_solution_herm_G0.65m0.125V3.5time50dt0.01dx1.66667e-05L1600_faster_finite_difference.dat",
+      "kind": "density",
+      "coupling": 0.65,
+      "mass_parameter": 0.125,
+      "initial_velocity": 3.5,
+      "dx": 1.66667e-05,
+      "dt": 0.01,
+      "length": 1600.0,
+      "cache": "df41e92d09165530.npz",
+      "time": 50.0
+    }
+  ],
+  "density_definition": "Re(psi)^2 + Im(psi)^2",
+  "selection": "Smallest spacing among folders with complete data through t=50; smallest dt on ties"
+}
