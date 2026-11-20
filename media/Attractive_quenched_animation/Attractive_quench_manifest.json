@@ -1,0 +1,2040 @@
+{
+  "source_manifest": "/home/sap/Desktop/Career/postdoc_codes_github/saptarshi7889.github.io/media/attractive_quenched/source_manifest.json",
+  "configuration_count": 124,
+  "files": [
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time1dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time2dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time3dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time4dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time6dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time7dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time8dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time9dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time10dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time11dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time12dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time13dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time14dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time15dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time16dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time17dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time18dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time19dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time20dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time21dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time22dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time23dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time24dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time25dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time26dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time26.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time27dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time27.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time28dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time28.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time29dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time29.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time30dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time30.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time31dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time31.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time32dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time32.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time33dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time33.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time34dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time34.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time35dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time35.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time36dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time36.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time37dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time37.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time38dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time38.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time39dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time39.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time40dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time40.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time41dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time41.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time42dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time42.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time43dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time43.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time44dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time44.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time45dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time45.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time46dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time46.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time47dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time47.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time48dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time48.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time49dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time49.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time50dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time50.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time51dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time51.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time52dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time52.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time53dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time53.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time54dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time54.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time55dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time55.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time56dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time56.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time57dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time57.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time58dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time58.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time59dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time59.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time60dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time60.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time61dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time61.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time62dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time62.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time63dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time63.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time64dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time64.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time65dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time65.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time66dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time66.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time67dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time67.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time68dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time68.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time69dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time69.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time70dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time70.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time71dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time71.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time72dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time72.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time73dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time73.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time74dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time74.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time75dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+  ],
+  "times": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0,
+    14.0,
+    15.0,
+    16.0,
+    17.0,
+    18.0,
+    19.0,
+    20.0,
+    21.0,
+    22.0,
+    23.0,
+    24.0,
+    25.0,
+    26.0,
+    26.5,
+    27.0,
+    27.5,
+    28.0,
+    28.5,
+    29.0,
+    29.5,
+    30.0,
+    30.5,
+    31.0,
+    31.5,
+    32.0,
+    32.5,
+    33.0,
+    33.5,
+    34.0,
+    34.5,
+    35.0,
+    35.5,
+    36.0,
+    36.5,
+    37.0,
+    37.5,
+    38.0,
+    38.5,
+    39.0,
+    39.5,
+    40.0,
+    40.5,
+    41.0,
+    41.5,
+    42.0,
+    42.5,
+    43.0,
+    43.5,
+    44.0,
+    44.5,
+    45.0,
+    45.5,
+    46.0,
+    46.5,
+    47.0,
+    47.5,
+    48.0,
+    48.5,
+    49.0,
+    49.5,
+    50.0,
+    50.5,
+    51.0,
+    51.5,
+    52.0,
+    52.5,
+    53.0,
+    53.5,
+    54.0,
+    54.5,
+    55.0,
+    55.5,
+    56.0,
+    56.5,
+    57.0,
+    57.5,
+    58.0,
+    58.5,
+    59.0,
+    59.5,
+    60.0,
+    60.5,
+    61.0,
+    61.5,
+    62.0,
+    62.5,
+    63.0,
+    63.5,
+    64.0,
+    64.5,
+    65.0,
+    65.5,
+    66.0,
+    66.5,
+    67.0,
+    67.5,
+    68.0,
+    68.5,
+    69.0,
+    69.5,
+    70.0,
+    70.5,
+    71.0,
+    71.5,
+    72.0,
+    72.5,
+    73.0,
+    73.5,
+    74.0,
+    74.5,
+    75.0
+  ],
+  "frame_times": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.09090909090909091,
+    0.18181818181818182,
+    0.2727272727272727,
+    0.36363636363636365,
+    0.4545454545454546,
+    0.5454545454545454,
+    0.6363636363636364,
+    0.7272727272727273,
+    0.8181818181818182,
+    0.9090909090909092,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0,
+    14.0,
+    15.0,
+    16.0,
+    17.0,
+    18.0,
+    19.0,
+    20.0,
+    21.0,
+    22.0,
+    23.0,
+    24.0,
+    25.0,
+    26.0,
+    26.5,
+    27.0,
+    27.5,
+    28.0,
+    28.5,
+    29.0,
+    29.5,
+    30.0,
+    30.5,
+    31.0,
+    31.5,
+    32.0,
+    32.5,
+    33.0,
+    33.5,
+    34.0,
+    34.5,
+    35.0,
+    35.5,
+    36.0,
+    36.5,
+    37.0,
+    37.5,
+    38.0,
+    38.5,
+    39.0,
+    39.5,
+    40.0,
+    40.5,
+    41.0,
+    41.5,
+    42.0,
+    42.5,
+    43.0,
+    43.5,
+    44.0,
+    44.5,
+    45.0,
+    45.5,
+    46.0,
+    46.5,
+    47.0,
+    47.5,
+    48.0,
+    48.5,
+    49.0,
+    49.5,
+    50.0,
+    50.5,
+    51.0,
+    51.5,
+    52.0,
+    52.5,
+    53.0,
+    53.5,
+    54.0,
+    54.5,
+    55.0,
+    55.5,
+    56.0,
+    56.5,
+    57.0,
+    57.5,
+    58.0,
+    58.5,
+    59.0,
+    59.5,
+    60.0,
+    60.5,
+    61.0,
+    61.5,
+    62.0,
+    62.5,
+    63.0,
+    63.5,
+    64.0,
+    64.5,
+    65.0,
+    65.5,
+    66.0,
+    66.5,
+    67.0,
+    67.5,
+    68.0,
+    68.5,
+    69.0,
+    69.5,
+    70.0,
+    70.5,
+    71.0,
+    71.5,
+    72.0,
+    72.5,
+    73.0,
+    73.5,
+    74.0,
+    74.5,
+    75.0
+  ],
+  "intro_frames": 5,
+  "transition_frames": 10,
+  "transition_description": "Smoothstep blend from uniform bath to first saved density; illustrative interpolation",
+  "boson_diameter_points": 3.2,
+  "impurity_diameter_points": 7.2,
+  "intro_description": "Illustrated t=0 uniform bath; not a saved configuration",
+  "fps": 12.75,
+  "playback_speed_relative_to_previous_version": 1.7,
+  "layout": "Two density panels above a separate unobstructed velocity axis",
+  "couplings": [
+    -0.8
+  ],
+  "initial_velocity": 2.0,
+  "mass_ratio": 8,
+  "density_coupling": -0.8,
+  "all_velocity_sources": [
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/impurity_velocity_herm_G-0.8m0.125V2dx0.0001dt0.00025L1200_faster_finite_difference.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/impurity_velocity_herm_G-0.8m0.125V2dx0.0001dt0.00025L1200_upwind_faster_finite_difference_contd_rep1_corrected.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/impurity_velocity_herm_G-0.8m0.125V2dx0.0001dt0.00025L1200_upwind_faster_finite_difference_contd_rep2_corrected.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/impurity_velocity_herm_G-0.8m0.125V2dx0.0001dt0.00025L1200_upwind_faster_finite_difference_contd_rep3_corrected.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/impurity_velocity_herm_G-0.8m0.125V2dx0.0001dt0.00025L1200_upwind_faster_finite_difference_contd_rep4_corrected.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/impurity_velocity_herm_G-0.8m0.125V2dx0.0001dt0.00025L1200_upwind_faster_finite_difference_contd_rep5_corrected.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/impurity_velocity_herm_G-0.8m0.125V2dx0.0001dt0.00025L1200_upwind_faster_finite_difference_contd_rep6_corrected.dat.gz",
+    "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/impurity_velocity_herm_G-0.8m0.125V2dx0.0001dt0.00025L1200_upwind_faster_finite_difference_contd_rep7_corrected.dat.gz"
+  ],
+  "duration_seconds": 10.901960784313726,
+  "impurity_to_boson_diameter_ratio": 2.25,
+  "boson_display_stride": 5000,
+  "zoom_boson_display_stride": 2500,
+  "velocity_gaps": [],
+  "velocity_bridge": {
+    "pdf": "/home/sap/Downloads/Impurity_corrected-1.pdf",
+    "pdf_page": 136,
+    "printed_page": 135,
+    "figure": "2.1, velocity top row third panel, brown curve",
+    "interval": [
+      65.7,
+      73.5
+    ],
+    "method": "Extract vector M/L vertices; linear interpolation to 0.1 time grid; preserve raw endpoints",
+    "sample_count": 77,
+    "overlap_rms_error": 0.0005370084408923901,
+    "overlap_max_error": 0.002159902876749109,
+    "status": "Recovered plotted coordinates, not original simulation precision"
+  },
+  "density_window": [
+    -50.0,
+    50.0
+  ],
+  "density_zoom_window": [
+    -15.0,
+    15.0
+  ],
+  "cloud_arrow_targets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      0.15,
+      0.999961746282787
+    ],
+    [
+      0.15,
+      0.999856857058171
+    ],
+    [
+      0.15,
+      0.9997001402166859
+    ],
+    [
+      0.15,
+      0.9995064036488656
+    ],
+    [
+      0.15,
+      0.9992904552452441
+    ],
+    [
+      0.15,
+      0.9990671028963558
+    ],
+    [
+      0.15,
+      0.9988511544927344
+    ],
+    [
+      0.15,
+      0.9986574179249141
+    ],
+    [
+      0.15,
+      0.9985007010834289
+    ],
+    [
+      0.15,
+      0.9983958118588128
+    ],
+    [
+      0.15,
+      0.9983575581416
+    ],
+    [
+      2.15,
+      1.6704725400436
+    ],
+    [
+      2.9,
+      1.7389662557377839
+    ],
+    [
+      3.9,
+      1.7051071289200002
+    ],
+    [
+      5.15,
+      1.6413810339586
+    ],
+    [
+      6.9,
+      1.5757129260813998
+    ],
+    [
+      8.65,
+      1.5275382387685998
+    ],
+    [
+      0.15,
+      1.2261247620554958
+    ],
+    [
+      0.15,
+      1.3254431791124
+    ],
+    [
+      0.15,
+      1.3868095577101651
+    ],
+    [
+      0.15,
+      1.4128782305294
+    ],
+    [
+      0.15,
+      1.4050011799316
+    ],
+    [
+      0.15,
+      1.3614714505966001
+    ],
+    [
+      0.15,
+      1.2779942468193999
+    ],
+    [
+      0.15,
+      1.1535255706864
+    ],
+    [
+      0.15,
+      1.008709360625554
+    ],
+    [
+      15.0,
+      1.0220522500840001
+    ],
+    [
+      15.0,
+      1.014593053759038
+    ],
+    [
+      0.15,
+      1.0300213104988
+    ],
+    [
+      0.15,
+      1.1545352509626
+    ],
+    [
+      0.15,
+      1.257757184518
+    ],
+    [
+      0.15,
+      1.3282703091322001
+    ],
+    [
+      0.15,
+      1.363751123656
+    ],
+    [
+      0.15,
+      1.3625543978542
+    ],
+    [
+      0.15,
+      1.321190289895
+    ],
+    [
+      0.15,
+      1.2325285176146
+    ],
+    [
+      0.15,
+      1.1679431042204
+    ],
+    [
+      0.15,
+      1.0895879867048
+    ],
+    [
+      0.15,
+      0.9994260467494
+    ],
+    [
+      0.15,
+      0.9031866513415999
+    ],
+    [
+      0.15,
+      0.8117543737002639
+    ],
+    [
+      -14.85,
+      1.0244612555992572
+    ],
+    [
+      -14.85,
+      1.0204464279824
+    ],
+    [
+      6.4,
+      1.0175423509600001
+    ],
+    [
+      0.15,
+      0.7729350855044
+    ],
+    [
+      0.15,
+      0.8572727278522001
+    ],
+    [
+      0.15,
+      0.954534027608
+    ],
+    [
+      0.15,
+      1.0518149970074
+    ],
+    [
+      0.15,
+      1.141072972202
+    ],
+    [
+      0.15,
+      1.2189717429466
+    ],
+    [
+      0.15,
+      1.2845079016190002
+    ],
+    [
+      0.15,
+      1.3382858143312
+    ],
+    [
+      0.15,
+      1.3810347091483999
+    ],
+    [
+      0.15,
+      1.413562082932736
+    ],
+    [
+      0.15,
+      1.4368585432597998
+    ],
+    [
+      0.15,
+      1.4520586166501999
+    ],
+    [
+      0.15,
+      1.4589812922214003
+    ],
+    [
+      0.15,
+      1.458311290195568
+    ],
+    [
+      0.15,
+      1.4500961201793998
+    ],
+    [
+      0.15,
+      1.4338896255758
+    ],
+    [
+      0.15,
+      1.4095786045586
+    ],
+    [
+      0.15,
+      1.3760295410924002
+    ],
+    [
+      0.15,
+      1.3336549680794
+    ],
+    [
+      0.15,
+      1.2813619814128
+    ],
+    [
+      0.15,
+      1.2196746160274
+    ],
+    [
+      0.15,
+      1.1513116362764002
+    ],
+    [
+      0.15,
+      1.0804692684346
+    ],
+    [
+      0.15,
+      1.0150812314876
+    ],
+    [
+      0.15,
+      0.9658167013960001
+    ],
+    [
+      0.15,
+      0.9424534513027999
+    ],
+    [
+      0.15,
+      0.9492044442838
+    ],
+    [
+      0.15,
+      0.983470981417
+    ],
+    [
+      0.15,
+      1.0353954989536
+    ],
+    [
+      0.15,
+      1.0965687601760001
+    ],
+    [
+      0.15,
+      1.1589211682527762
+    ],
+    [
+      0.15,
+      1.2176378402974
+    ],
+    [
+      0.15,
+      1.270761314644
+    ],
+    [
+      0.15,
+      1.3167976731664002
+    ],
+    [
+      0.15,
+      1.3554459176259162
+    ],
+    [
+      0.15,
+      1.3871167254217998
+    ],
+    [
+      0.15,
+      1.4107343508532
+    ],
+    [
+      0.15,
+      1.4272271138522001
+    ],
+    [
+      0.15,
+      1.436042824779974
+    ],
+    [
+      0.15,
+      1.4381627757662
+    ],
+    [
+      0.15,
+      1.4316877475974001
+    ],
+    [
+      0.15,
+      1.4176735281406
+    ],
+    [
+      0.15,
+      1.394522474465
+    ],
+    [
+      0.15,
+      1.3620250022828
+    ],
+    [
+      0.15,
+      1.3180389435418
+    ],
+    [
+      0.15,
+      1.263029072372
+    ],
+    [
+      0.15,
+      1.1943795463484
+    ],
+    [
+      0.15,
+      1.113509381137
+    ],
+    [
+      0.15,
+      1.0231031010064
+    ],
+    [
+      0.15,
+      0.929248809565
+    ],
+    [
+      0.15,
+      0.8426251588496001
+    ],
+    [
+      0.15,
+      0.7787887788523999
+    ],
+    [
+      0.15,
+      0.751963467673
+    ],
+    [
+      0.15,
+      0.7692384446068
+    ],
+    [
+      0.15,
+      0.8251132943977999
+    ],
+    [
+      0.15,
+      0.9067223121614858
+    ],
+    [
+      0.15,
+      0.9995447901394001
+    ],
+    [
+      0.15,
+      1.0907005680032
+    ],
+    [
+      0.15,
+      1.1749450376619999
+    ],
+    [
+      0.15,
+      1.247949223161
+    ],
+    [
+      0.15,
+      1.3106218368046003
+    ],
+    [
+      0.15,
+      1.3626274198364
+    ],
+    [
+      0.15,
+      1.4042004444686
+    ],
+    [
+      0.15,
+      1.4372825337256
+    ],
+    [
+      0.15,
+      1.4612971126876
+    ],
+    [
+      0.15,
+      1.4783848311637997
+    ],
+    [
+      0.15,
+      1.4887122785967999
+    ],
+    [
+      0.15,
+      1.4917462606195997
+    ],
+    [
+      0.15,
+      1.4889287404178
+    ],
+    [
+      0.15,
+      1.4792449743470002
+    ],
+    [
+      0.15,
+      1.4623160110720002
+    ],
+    [
+      0.15,
+      1.437925378157
+    ],
+    [
+      0.15,
+      1.4065761941088
+    ],
+    [
+      0.15,
+      1.3661665466750001
+    ],
+    [
+      0.15,
+      1.3170726086698004
+    ],
+    [
+      0.15,
+      1.2598001866074
+    ],
+    [
+      0.15,
+      1.1959224676268
+    ],
+    [
+      0.15,
+      1.1287003995673999
+    ],
+    [
+      0.15,
+      1.06510062457222
+    ],
+    [
+      0.15,
+      1.0148168517393998
+    ],
+    [
+      0.15,
+      0.9872077581650001
+    ],
+    [
+      0.15,
+      0.986972144035
+    ],
+    [
+      0.15,
+      1.013749101192
+    ],
+    [
+      0.15,
+      1.0605693520333
+    ],
+    [
+      0.15,
+      1.1182903369245998
+    ],
+    [
+      0.15,
+      1.1794058136514
+    ],
+    [
+      0.15,
+      1.2384517775126
+    ],
+    [
+      0.15,
+      1.2931356917624899
+    ],
+    [
+      0.15,
+      1.3417872613318
+    ],
+    [
+      0.15,
+      1.3842886416940001
+    ]
+  ],
+  "zoom_cloud_arrow_targets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      0.15,
+      0.999961746282787
+    ],
+    [
+      0.15,
+      0.999856857058171
+    ],
+    [
+      0.15,
+      0.9997001402166859
+    ],
+    [
+      0.15,
+      0.9995064036488656
+    ],
+    [
+      0.15,
+      0.9992904552452441
+    ],
+    [
+      0.15,
+      0.9990671028963558
+    ],
+    [
+      0.15,
+      0.9988511544927344
+    ],
+    [
+      0.15,
+      0.9986574179249141
+    ],
+    [
+      0.15,
+      0.9985007010834289
+    ],
+    [
+      0.15,
+      0.9983958118588128
+    ],
+    [
+      0.15,
+      0.9983575581416
+    ],
+    [
+      2.15,
+      1.6704725400436
+    ],
+    [
+      2.9,
+      1.7389662557377839
+    ],
+    [
+      3.9,
+      1.7051071289200002
+    ],
+    [
+      5.15,
+      1.6413810339586
+    ],
+    [
+      6.9,
+      1.5757129260813998
+    ],
+    [
+      8.65,
+      1.5275382387685998
+    ],
+    [
+      0.15,
+      1.2261247620554958
+    ],
+    [
+      0.15,
+      1.3254431791124
+    ],
+    [
+      0.15,
+      1.3868095577101651
+    ],
+    [
+      0.15,
+      1.4128782305294
+    ],
+    [
+      0.15,
+      1.4050011799316
+    ],
+    [
+      0.15,
+      1.3614714505966001
+    ],
+    [
+      0.15,
+      1.2779942468193999
+    ],
+    [
+      0.15,
+      1.1535255706864
+    ],
+    [
+      0.15,
+      1.008709360625554
+    ],
+    [
+      15.0,
+      1.0220522500840001
+    ],
+    [
+      15.0,
+      1.014593053759038
+    ],
+    [
+      0.15,
+      1.0300213104988
+    ],
+    [
+      0.15,
+      1.1545352509626
+    ],
+    [
+      0.15,
+      1.257757184518
+    ],
+    [
+      0.15,
+      1.3282703091322001
+    ],
+    [
+      0.15,
+      1.363751123656
+    ],
+    [
+      0.15,
+      1.3625543978542
+    ],
+    [
+      0.15,
+      1.321190289895
+    ],
+    [
+      0.15,
+      1.2325285176146
+    ],
+    [
+      0.15,
+      1.1679431042204
+    ],
+    [
+      0.15,
+      1.0895879867048
+    ],
+    [
+      0.15,
+      0.9994260467494
+    ],
+    [
+      0.15,
+      0.9031866513415999
+    ],
+    [
+      0.15,
+      0.8117543737002639
+    ],
+    [
+      -14.85,
+      1.0244612555992572
+    ],
+    [
+      -14.85,
+      1.0204464279824
+    ],
+    [
+      6.4,
+      1.0175423509600001
+    ],
+    [
+      0.15,
+      0.7729350855044
+    ],
+    [
+      0.15,
+      0.8572727278522001
+    ],
+    [
+      0.15,
+      0.954534027608
+    ],
+    [
+      0.15,
+      1.0518149970074
+    ],
+    [
+      0.15,
+      1.141072972202
+    ],
+    [
+      0.15,
+      1.2189717429466
+    ],
+    [
+      0.15,
+      1.2845079016190002
+    ],
+    [
+      0.15,
+      1.3382858143312
+    ],
+    [
+      0.15,
+      1.3810347091483999
+    ],
+    [
+      0.15,
+      1.413562082932736
+    ],
+    [
+      0.15,
+      1.4368585432597998
+    ],
+    [
+      0.15,
+      1.4520586166501999
+    ],
+    [
+      0.15,
+      1.4589812922214003
+    ],
+    [
+      0.15,
+      1.458311290195568
+    ],
+    [
+      0.15,
+      1.4500961201793998
+    ],
+    [
+      0.15,
+      1.4338896255758
+    ],
+    [
+      0.15,
+      1.4095786045586
+    ],
+    [
+      0.15,
+      1.3760295410924002
+    ],
+    [
+      0.15,
+      1.3336549680794
+    ],
+    [
+      0.15,
+      1.2813619814128
+    ],
+    [
+      0.15,
+      1.2196746160274
+    ],
+    [
+      0.15,
+      1.1513116362764002
+    ],
+    [
+      0.15,
+      1.0804692684346
+    ],
+    [
+      0.15,
+      1.0150812314876
+    ],
+    [
+      0.15,
+      0.9658167013960001
+    ],
+    [
+      0.15,
+      0.9424534513027999
+    ],
+    [
+      0.15,
+      0.9492044442838
+    ],
+    [
+      0.15,
+      0.983470981417
+    ],
+    [
+      0.15,
+      1.0353954989536
+    ],
+    [
+      0.15,
+      1.0965687601760001
+    ],
+    [
+      0.15,
+      1.1589211682527762
+    ],
+    [
+      0.15,
+      1.2176378402974
+    ],
+    [
+      0.15,
+      1.270761314644
+    ],
+    [
+      0.15,
+      1.3167976731664002
+    ],
+    [
+      0.15,
+      1.3554459176259162
+    ],
+    [
+      0.15,
+      1.3871167254217998
+    ],
+    [
+      0.15,
+      1.4107343508532
+    ],
+    [
+      0.15,
+      1.4272271138522001
+    ],
+    [
+      0.15,
+      1.436042824779974
+    ],
+    [
+      0.15,
+      1.4381627757662
+    ],
+    [
+      0.15,
+      1.4316877475974001
+    ],
+    [
+      0.15,
+      1.4176735281406
+    ],
+    [
+      0.15,
+      1.394522474465
+    ],
+    [
+      0.15,
+      1.3620250022828
+    ],
+    [
+      0.15,
+      1.3180389435418
+    ],
+    [
+      0.15,
+      1.263029072372
+    ],
+    [
+      0.15,
+      1.1943795463484
+    ],
+    [
+      0.15,
+      1.113509381137
+    ],
+    [
+      0.15,
+      1.0231031010064
+    ],
+    [
+      0.15,
+      0.929248809565
+    ],
+    [
+      0.15,
+      0.8426251588496001
+    ],
+    [
+      0.15,
+      0.7787887788523999
+    ],
+    [
+      0.15,
+      0.751963467673
+    ],
+    [
+      0.15,
+      0.7692384446068
+    ],
+    [
+      0.15,
+      0.8251132943977999
+    ],
+    [
+      0.15,
+      0.9067223121614858
+    ],
+    [
+      0.15,
+      0.9995447901394001
+    ],
+    [
+      0.15,
+      1.0907005680032
+    ],
+    [
+      0.15,
+      1.1749450376619999
+    ],
+    [
+      0.15,
+      1.247949223161
+    ],
+    [
+      0.15,
+      1.3106218368046003
+    ],
+    [
+      0.15,
+      1.3626274198364
+    ],
+    [
+      0.15,
+      1.4042004444686
+    ],
+    [
+      0.15,
+      1.4372825337256
+    ],
+    [
+      0.15,
+      1.4612971126876
+    ],
+    [
+      0.15,
+      1.4783848311637997
+    ],
+    [
+      0.15,
+      1.4887122785967999
+    ],
+    [
+      0.15,
+      1.4917462606195997
+    ],
+    [
+      0.15,
+      1.4889287404178
+    ],
+    [
+      0.15,
+      1.4792449743470002
+    ],
+    [
+      0.15,
+      1.4623160110720002
+    ],
+    [
+      0.15,
+      1.437925378157
+    ],
+    [
+      0.15,
+      1.4065761941088
+    ],
+    [
+      0.15,
+      1.3661665466750001
+    ],
+    [
+      0.15,
+      1.3170726086698004
+    ],
+    [
+      0.15,
+      1.2598001866074
+    ],
+    [
+      0.15,
+      1.1959224676268
+    ],
+    [
+      0.15,
+      1.1287003995673999
+    ],
+    [
+      0.15,
+      1.06510062457222
+    ],
+    [
+      0.15,
+      1.0148168517393998
+    ],
+    [
+      0.15,
+      0.9872077581650001
+    ],
+    [
+      0.15,
+      0.986972144035
+    ],
+    [
+      0.15,
+      1.013749101192
+    ],
+    [
+      0.15,
+      1.0605693520333
+    ],
+    [
+      0.15,
+      1.1182903369245998
+    ],
+    [
+      0.15,
+      1.1794058136514
+    ],
+    [
+      0.15,
+      1.2384517775126
+    ],
+    [
+      0.15,
+      1.2931356917624899
+    ],
+    [
+      0.15,
+      1.3417872613318
+    ],
+    [
+      0.15,
+      1.3842886416940001
+    ]
+  ],
+  "zoom_cloud_arrow_offset": 0.15,
+  "cloud_arrow_tracking": "Point beside the density maximum inside the zoom window",
+  "density_sample_spacing": 0.25,
+  "density_points_per_frame": 401,
+  "density_sources": [
+    {
+      "time": 1.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time1dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 2.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time2dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 3.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time3dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 4.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time4dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 5.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 6.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time6dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 7.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time7dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 8.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time8dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 9.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time9dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 10.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time10dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 11.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time11dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 12.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time12dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 13.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time13dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 14.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time14dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 15.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time15dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 16.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time16dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 17.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time17dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 18.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time18dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 19.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time19dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 20.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time20dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 21.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time21dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 22.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time22dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 23.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time23dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 24.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time24dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 25.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time25dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 26.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time26dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 26.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time26.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 27.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time27dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 27.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time27.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 28.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time28dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 28.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time28.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 29.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time29dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 29.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time29.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 30.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time30dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 30.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time30.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 31.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time31dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 31.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time31.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 32.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time32dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 32.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time32.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 33.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time33dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 33.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time33.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 34.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time34dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 34.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time34.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 35.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time35dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 35.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time35.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 36.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time36dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 36.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time36.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 37.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time37dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 37.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time37.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 38.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time38dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 38.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time38.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 39.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time39dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 39.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time39.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 40.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time40dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 40.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time40.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 41.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time41dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 41.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time41.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 42.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time42dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 42.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time42.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 43.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time43dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 43.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time43.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 44.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time44dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 44.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time44.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 45.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time45dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 45.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time45.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 46.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time46dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 46.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time46.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 47.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time47dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 47.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time47.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 48.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time48dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 48.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time48.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 49.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time49dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 49.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time49.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 50.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time50dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 50.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time50.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 51.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time51dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 51.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time51.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 52.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time52dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 52.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time52.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 53.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time53dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 53.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time53.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 54.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time54dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 54.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time54.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 55.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time55dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 55.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time55.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 56.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time56dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 56.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time56.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 57.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time57dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 57.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time57.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 58.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time58dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 58.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time58.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 59.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time59dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 59.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time59.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 60.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time60dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 60.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time60.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 61.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time61dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 61.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time61.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 62.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time62dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 62.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time62.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 63.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time63dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 63.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time63.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 64.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time64dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 64.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time64.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 65.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time65dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 65.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time65.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 66.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time66dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 66.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time66.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 67.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time67dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 67.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time67.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 68.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time68dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 68.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time68.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 69.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time69dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 69.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time69.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 70.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time70dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 70.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time70.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 71.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time71dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 71.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time71.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 72.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time72dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 72.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time72.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 73.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time73dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 73.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time73.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 74.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time74dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 74.5,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time74.5dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    },
+    {
+      "time": 75.0,
+      "path": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Soliton/G-0.8/m0.125/V2/dx10000/dt0.00025/Phi_solution_herm_G-0.8m0.125V2time75dt0.00025dx0.0001L1200_faster_finite_difference.dat.gz"
+    }
+  ],
+  "density_definition": "Re(psi)^2 + Im(psi)^2",
+  "description": "Attractive quench through t=75; all saved snapshots used. Velocity gap filled from the PDF vector curve; provenance in source manifest. Snapshot playback is six frames per second."
+}
