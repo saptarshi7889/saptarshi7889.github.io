@@ -31,7 +31,7 @@
   let playing = !reduced;
   let previous = null;
   let dropped = false, stageTime = 0, selectedProtocol = 'quenched';
-  let awaitingDrop = false, previewProtocol = null, previewInteraction = null, selectedInteraction = null;
+  let awaitingDrop = false, previewProtocol = null, previewInteraction = null;
 
   function drawStage() {
     const ctx = pipe.getContext('2d');
@@ -45,7 +45,7 @@
     const y = dropped ? SETTINGS.stageStartY+(SETTINGS.tubeY+SETTINGS.stageOffset-SETTINGS.stageStartY)*fall*fall : SETTINGS.stageStartY;
     ctx.setTransform(SETTINGS.scale,0,0,SETTINGS.scale,0,0);
     ctx.clearRect(0,0,SETTINGS.width,SETTINGS.stageHeight);
-    const interaction = previewInteraction || selectedInteraction;
+    const interaction = previewInteraction;
     const direction = interaction==='repulsive' ? 1 : interaction==='attractive' ? -1 : 0;
     const surfaceY = bx => SETTINGS.tubeTop+SETTINGS.stageOffset+direction*SETTINGS.dipHeight*Math.exp(-(((bx-x)/SETTINGS.profileWidth)**2));
     ctx.fillStyle=colors.tube; ctx.globalAlpha=SETTINGS.tubeOpacity;
@@ -128,9 +128,7 @@
     option.addEventListener('click',()=>{
       const protocol = option.dataset.protocol;
       selectedProtocol=protocol;
-      previewProtocol=null; previewInteraction=null; selectedInteraction=null;
-      document.getElementById('impurity-result').hidden=true;
-      for(const button of root.querySelectorAll('[data-interaction]')) button.setAttribute('aria-pressed','false');
+      previewProtocol=null; previewInteraction=null;
       stageTime=SETTINGS.dropTime;
       protocols.hidden=true; trigger.setAttribute('aria-expanded','false');
       interactions.hidden=false;
@@ -147,14 +145,8 @@
     option.addEventListener('pointerleave',clear);
     option.addEventListener('blur',clear);
     option.addEventListener('click',()=>{
-      selectedInteraction=option.dataset.interaction; previewInteraction=null;
-      for(const button of root.querySelectorAll('[data-interaction]')) button.setAttribute('aria-pressed',String(button===option));
-      const details=document.getElementById('impurity-details');
-      details.href=`${selectedProtocol}${selectedInteraction==='attractive' ? '-attractive' : ''}.html#${selectedInteraction}`;
-      details.textContent=`Explore ${selectedInteraction} ${selectedProtocol}`;
-      document.getElementById('impurity-result').hidden=false;
-      status.textContent=`${selectedInteraction==='attractive' ? 'Attractive' : 'Repulsive'} ${selectedProtocol} selected.`;
-      render();
+      const interaction=option.dataset.interaction;
+      window.location.assign(`${selectedProtocol}${interaction==='attractive' ? '-attractive' : ''}.html#${interaction}`);
     });
   }
   pause.addEventListener('click',()=>{
