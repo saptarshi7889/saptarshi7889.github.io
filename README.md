@@ -6,11 +6,13 @@ Static personal homepage for **https://saptarshi7889.github.io/**.
 - `quenched.html`: constant-momentum papers, code/header links, and animation.
 - `driven.html`: constant-force papers, code/header links, and animations.
 - `style.css`: desktop and mobile layout.
+- `media/quenched/`: replacement MP4/GIF and preview for the quenched page.
 - `.nojekyll`: serve the static files directly with GitHub Pages.
 
 The Bose-polaron solver is a separate project website. This homepage links to
-its existing address and reuses its public simulation media on the two dedicated
-protocol pages. The homepage has no animations. Code links target release v0.3.1.
+its existing address. The quenched page serves its replacement animation from
+local `media/quenched/` assets; the driven page reuses the project website’s
+public simulation media. The homepage has no animations. Code links target release v0.3.1.
 This site does not modify the solver repository or website.
 
 ## Preview locally
