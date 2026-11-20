@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const SETTINGS = {
-    width: 320, height: 140, scale: 2, duration: 12, maxFrame: .1,
+    width: 320, height: 140, scale: 2, duration: 7, maxFrame: .1,
     tubeY: 75, tubeTop: 52, tubeBottom: 98, left: 12, right: 308,
     spacing: 15, radius: 12, particleRadius: 3, startX: 52,
     steadySpeed: 13, excessSpeed: 44, relaxation: 1.7,
@@ -157,8 +157,12 @@
   function frame(now) {
     if(playing && !document.hidden && previous!==null) {
       const elapsed=Math.min(SETTINGS.maxFrame,(now-previous)/1000);
-      time=Math.min(SETTINGS.duration,time+elapsed);
-      if(dropped) stageTime+=elapsed;
+      if(dropped) {
+        const remaining=SETTINGS.duration-time;
+        const advance=Math.min(elapsed,remaining);
+        time+=advance; stageTime+=advance;
+        if(time>=SETTINGS.duration) {playing=false; controls();}
+      }
       if(awaitingDrop && stageTime>=SETTINGS.dropTime) {
         awaitingDrop=false; openProtocols();
         status.textContent='Quenched or Driven? Hover to preview, click to choose.';

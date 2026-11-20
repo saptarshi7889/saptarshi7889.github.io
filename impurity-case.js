@@ -6,7 +6,7 @@
     spacing: 15, rows: 4, rowSpacing: 13, particleRadius: 3,
     radius: 13, impurityY: 108, profileWidth: 29, profileHeight: 27,
     displacement: 27, steadySpeed: 13, excessSpeed: 44, relaxation: 1.7,
-    driftSpeed: 11, oscillationSpeed: 45, period: 3, maxFrame: .1,
+    driftSpeed: 11, oscillationSpeed: 45, period: 3, maxFrame: .1, duration: 7,
     pixel: 2, velocityY: 185, forceY: 40, forceLength: 50, arrowScale: .7,
     tubeOpacity: .1, edgeOpacity: .4, labelSize: 12,
     red: '#df5149', redLight: '#ffada0', redShade: '#953631',
@@ -21,7 +21,7 @@
   const tube = style.getPropertyValue('--teal').trim();
   const ink = style.getPropertyValue('--ink').trim();
   let playing = !matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let time = 0, previous = null;
+  let time = 0, playback = 0, previous = null;
   function motion(t) {
     if(protocol==='quenched') return {
       x: C.steadySpeed*t+C.excessSpeed*C.relaxation*(1-Math.exp(-t/C.relaxation)),
@@ -82,10 +82,15 @@
     if(protocol==='driven') arrow(center+8,C.forceY,C.forceLength,'F',C.red);
   }
   function controls() {button.textContent=playing?'Pause animation':'Play animation';}
-  button.addEventListener('click',()=>{playing=!playing;previous=null;controls();});
+  button.addEventListener('click',()=>{
+    if(playback>=C.duration) playback=0;
+    playing=!playing;previous=null;controls();
+  });
   function frame(now) {
     if(playing && !document.hidden && previous!==null) {
-      time+=Math.min(C.maxFrame,(now-previous)/1000);
+      const elapsed=Math.min(C.maxFrame,(now-previous)/1000,C.duration-playback);
+      time+=elapsed; playback+=elapsed;
+      if(playback>=C.duration) {playing=false;controls();}
       render();
     }
     previous=now;requestAnimationFrame(frame);
