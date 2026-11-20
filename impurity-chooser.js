@@ -134,7 +134,7 @@
       trigger.textContent = `Impurity · ${protocol==='quenched' ? 'Quenched' : 'Driven'}`;
       protocols.hidden=true; trigger.setAttribute('aria-expanded','false');
       interactions.hidden=false;
-      for(const link of root.querySelectorAll('[data-interaction]')) link.href=`${protocol}.html#${link.dataset.interaction}`;
+      for(const link of root.querySelectorAll('[data-interaction]')) link.href=`${protocol}${link.dataset.interaction==='attractive' ? '-attractive' : ''}.html#${link.dataset.interaction}`;
       status.textContent = `${protocol==='quenched' ? 'Quenched' : 'Driven'} selected. Choose Repulsive or Attractive.`;
       restart();
       interactions.querySelector('a').focus();

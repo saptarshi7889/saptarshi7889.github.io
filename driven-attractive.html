@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Attractive driven impurity: paper, illustrative dynamics, and C++17 solver libraries by Saptarshi Majumdar.">
+  <meta name="theme-color" content="#183f48">
+  <title>Attractive driven impurity · Saptarshi Majumdar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="wordmark" href="index.html">Saptarshi Majumdar<span>PHYSICS · COMPUTATION · RESEARCH</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#projects">Projects</a><a href="index.html#background">Background</a><a href="index.html#profiles">Profiles</a></nav>
+  </header>
+  <main id="main" class="wrap protocol-page">
+    <p class="eyebrow">1D BOSE POLARON GPE SOLVER</p>
+    <h1 id="attractive">Attractive driven impurity</h1>
+    <p class="protocol-intro">A constant external force F drives the impurity through the Bose gas. The drive contribution to its velocity is (m/M)Ft, with time carried through checkpoint restarts.</p>
+    <nav class="project-tabs case-tabs" aria-label="Impurity cases"><a href="quenched.html#repulsive">Repulsive quenched</a><a href="quenched-attractive.html#attractive">Attractive quenched</a><a href="driven.html#repulsive">Repulsive driven</a><a href="driven-attractive.html#attractive" aria-current="page">Attractive driven</a></nav>
+    <section class="case-animation" aria-label="Attractive driven animation">
+      <canvas id="case-canvas" width="960" height="420" data-protocol="driven" data-interaction="attractive" role="img" aria-label="Illustrative Attractive driven impurity: Bloch oscillations with drift and a constant force, with a moving density peak and bosons attracted around the impurity."></canvas>
+      <button type="button" id="case-pause">Pause animation</button>
+      <p class="impurity-note">Illustrative motion and density response.</p>
+    </section>
+    <section class="protocol-section" aria-labelledby="animations"><h2 id="animations">Recorded dynamics</h2><p>Coming soon.</p></section>
+    <section class="protocol-section" aria-labelledby="papers"><h2 id="papers">Related paper</h2><article class="paper-entry"><p class="paper-kind">Attractive impurity–boson interaction</p><h3><a href="https://journals.aps.org/pra/abstract/10.1103/t36j-gd59">Driven dynamics of an attractive Bose polaron</a></h3><p>Saptarshi Majumdar and Aleksandra Petković<br><em>Physical Review A</em> 114, 053303 (2026)</p></article></section>
+    <section class="protocol-section" aria-labelledby="codes"><h2 id="codes">Codes and header libraries</h2><p>Set <code>gpe::DrivenSimulationParameters::F</code>, configure the grid and evolution settings, and link to the compiled <code>gpe::solver</code> library.</p><a class="button" href="https://github.com/saptarshi7889/Conservative-Finite-Difference-Method-for-GPE-of-1d-Bose-Polaron/blob/v0.3.1/README.md#2-constant-force-driven-impurity">Open this solver’s code and library guide</a><ul class="code-links"><li><a href="https://github.com/saptarshi7889/Conservative-Finite-Difference-Method-for-GPE-of-1d-Bose-Polaron/blob/v0.3.1/include/gpe/GPE_solver_driven.hpp">Fresh-run header: GPE_solver_driven.hpp</a></li><li><a href="https://github.com/saptarshi7889/Conservative-Finite-Difference-Method-for-GPE-of-1d-Bose-Polaron/blob/v0.3.1/include/gpe/GPE_solver_driven_contd.hpp">Continuation header: GPE_solver_driven_contd.hpp</a></li><li><a href="https://github.com/saptarshi7889/Conservative-Finite-Difference-Method-for-GPE-of-1d-Bose-Polaron/blob/v0.3.1/examples/driven/main.cpp">Complete C++ example</a></li><li><a href="https://github.com/saptarshi7889/Conservative-Finite-Difference-Method-for-GPE-of-1d-Bose-Polaron/blob/v0.3.1/legacy/finite_difference_modified_impurity_Thomas_generalized_adiabatic_without_Matrix_hermitian_vel_contd_massdep_Kamenev_new_cluster_upwind_scheme.cpp">Original continuation research code</a></li><li><a href="https://github.com/saptarshi7889/Conservative-Finite-Difference-Method-for-GPE-of-1d-Bose-Polaron/blob/v0.3.1/legacy/finite_difference_modified_impurity_Thomas_generalized_adiabatic_without_Matrix_hermitian_vel_massdep_Kamenev_new_cluster_upwind_scheme.cpp">Original fresh-run research code</a></li></ul></section>
+    <a class="quiet-link" href="index.html#projects">Back to all projects</a>
+  </main>
+  <footer class="footer wrap"><span>Saptarshi Majumdar</span><span>Quantum physics · Scientific computing</span></footer>
+  <script src="impurity-case.js" defer></script>
+</body>
+</html>

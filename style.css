@@ -142,6 +142,11 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
 .project-tabs a:hover { background: var(--wash); }
 .project-tabs a[aria-current="page"] { background: var(--ink); color: var(--white); }
 .project-tabs a:focus-visible { position: relative; z-index: 1; }
+.case-tabs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.case-animation { margin-block: 2rem; }
+.case-animation canvas { display: block; width: 100%; max-width: 960px; height: auto; image-rendering: pixelated; }
+.case-animation button { padding: .65rem 1rem; border: 1px solid var(--line); background: var(--white); color: var(--ink); font: inherit; cursor: pointer; }
+.case-animation button:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
 .protocol-page { padding-block: 4rem; }
 .protocol-page h1 { max-width: 58rem; font-size: clamp(2.5rem, 4.5vw, 3.75rem); }
 .protocol-page h2 { font-size: clamp(2rem, 3vw, 2.75rem); }
