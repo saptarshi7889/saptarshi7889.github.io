@@ -164,6 +164,7 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
 .regime-picker { margin-block: 1rem; }
 .regime-trigger { padding: .5rem 0; border: 0; background: transparent; font: 600 1.2rem ui-monospace, monospace; cursor: pointer; }
 .regime-trigger { color: var(--regime-color); }
+.regime-heading { color: var(--regime-color); }
 .regime-heading .regime-trigger { padding: 0; font: inherit; letter-spacing: inherit; text-align: left; }
 .regime-trigger:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
 .recorded-choices button { padding: .75rem 1.25rem; border: 1px solid var(--line); background: var(--white); color: var(--ink); font: inherit; cursor: pointer; }
