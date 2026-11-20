@@ -1,0 +1,156 @@
+{
+  "paper": "https://arxiv.org/pdf/2602.08443",
+  "velocity_sources": [
+    {
+      "initial_velocity": 0.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V0.5/dx1000",
+      "member": "impurity_velocity_herm_G-0.8m0.333333V0.5dx0.001dt0.01L800_faster_finite_difference.dat.gz"
+    },
+    {
+      "initial_velocity": 1.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V1.5/dx1000.tar.gz",
+      "member": "dx1000/impurity_velocity_herm_G-0.8m0.333333V1.5dx0.001dt0.01L800_faster_finite_difference.dat"
+    },
+    {
+      "initial_velocity": 2.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2.5/dx1000.tar.gz",
+      "member": "dx1000/impurity_velocity_herm_G-0.8m0.333333V2.5dx0.001dt0.01L800_faster_finite_difference.dat"
+    },
+    {
+      "initial_velocity": 3.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V3.5/dx2000.tar.gz",
+      "member": "dx2000/impurity_velocity_herm_G-0.8m0.333333V3.5dx0.0005dt0.01L800_faster_finite_difference.dat"
+    },
+    {
+      "initial_velocity": 4.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V4.5/dx5000.tar.gz",
+      "member": "dx5000/dt0.0025_L2400/impurity_velocity_herm_G-0.8m0.333333V4.5dx0.0002dt0.0025L2400_faster_finite_difference.dat"
+    },
+    {
+      "initial_velocity": 4.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V4.5/dx5000.tar.gz",
+      "member": "dx5000/dt0.0025_L2400/impurity_velocity_herm_G-0.8m0.333333V4.5dx0.0002dt0.0025L2400_upwind_faster_finite_difference_contd_rep1_corrected.dat"
+    }
+  ],
+  "density_sources": [
+    {
+      "time": 17.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time17.5dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 10.0,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time10dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 25.0,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time25dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 22.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time22.5dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 40.0,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time40dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 7.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time7.5dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 12.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time12.5dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 20.0,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time20dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 37.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time37.5dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 35.0,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time35dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 5.0,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time5dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 15.0,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time15dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 2.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time2.5dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 27.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time27.5dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 30.0,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time30dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    },
+    {
+      "time": 32.5,
+      "archive": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_quenched/Velocity_initial_vel_final/m0.333/V2/dx12500.tar.gz",
+      "member": "dx12500/Phi_solution_herm_G-0.8m0.333333V2time32.5dt0.01dx8e-05L1200_faster_finite_difference.dat",
+      "dx": 8e-05,
+      "stride": 625
+    }
+  ],
+  "density_definition": "Re(psi)^2 + Im(psi)^2",
+  "window": [
+    -40.0,
+    40.0
+  ],
+  "final_time": 40.0,
+  "density_initial_velocity": 2.0
+}
