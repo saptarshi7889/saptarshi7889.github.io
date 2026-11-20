@@ -2,6 +2,27 @@
   'use strict';
   const PLAY_COUNT = 3;
   const choices = document.getElementById('recorded-choices');
+  const picker = document.getElementById('regime-picker');
+  const trigger = document.getElementById('regime-trigger');
+  function showChoices(show) {
+    choices.hidden = !show;
+    trigger.setAttribute('aria-expanded', String(show));
+  }
+  picker.addEventListener('pointerenter', () => showChoices(true));
+  picker.addEventListener('pointerleave', () => {
+    if(!picker.contains(document.activeElement)) showChoices(false);
+  });
+  picker.addEventListener('focusin', () => showChoices(true));
+  picker.addEventListener('focusout', event => {
+    if(!picker.contains(event.relatedTarget)) showChoices(false);
+  });
+  trigger.addEventListener('click', () => showChoices(true));
+  picker.addEventListener('keydown', event => {
+    if(event.key === 'Escape') {
+      trigger.focus();
+      showChoices(false);
+    }
+  });
   const buttons = Array.from(choices.querySelectorAll('button'));
   const recordings = buttons.map(button => {
     const panel = document.getElementById(button.getAttribute('aria-controls'));
@@ -32,5 +53,4 @@
       video.play().catch(() => {});
     });
   }
-  choices.hidden = false;
 })();
