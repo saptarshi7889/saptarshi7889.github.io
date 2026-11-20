@@ -105,7 +105,7 @@
   }
   function openProtocols() {
     if(!protocols.hidden) return;
-    protocols.hidden = false; trigger.setAttribute('aria-expanded','true'); restart();
+    protocols.hidden = false; trigger.setAttribute('aria-expanded','true'); render();
   }
   trigger.addEventListener('click',()=>{
     if(!dropped) {
