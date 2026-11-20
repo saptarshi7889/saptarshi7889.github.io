@@ -1,4 +1,5 @@
 :root {
+  --regime-color: #b33333;
   --impurity-blue: #365fe9;
   --impurity-blue-edge: #243782;
   --impurity-blue-light: #9ebaff;
@@ -160,6 +161,10 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
 .protocol-media { margin: 2rem 0; padding: 1.5rem; background: var(--white); border: 1px solid var(--line); }
 .protocol-media[hidden], .recorded-choices[hidden] { display: none; }
 .recorded-choices { display: flex; flex-wrap: wrap; gap: 1rem; }
+.regime-picker { margin-block: 1rem; }
+.regime-trigger { padding: .5rem 0; border: 0; background: transparent; font: 600 1.2rem ui-monospace, monospace; cursor: pointer; }
+.regime-trigger { color: var(--regime-color); }
+.regime-trigger:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
 .recorded-choices button { padding: .75rem 1.25rem; border: 1px solid var(--line); background: var(--white); color: var(--ink); font: inherit; cursor: pointer; }
 .recorded-choices button[aria-expanded="true"] { background: var(--ink); color: var(--white); }
 .recorded-choices button:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
