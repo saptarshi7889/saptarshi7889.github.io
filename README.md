@@ -27,15 +27,27 @@ Open `http://localhost:8000/`, then stop with Ctrl+C.
 ## Publish
 
 The GitHub repository must be named **saptarshi7889.github.io**.
-After pushing the `main` branch, open **Settings → Pages** and choose:
+For the automatic versioned deployment, open **Settings → Pages** once and choose:
 
-- **Source:** Deploy from a branch
-- **Branch:** main
-- **Folder:** / (root)
+- **Source:** GitHub Actions
 
-Save, then wait for GitHub's Pages deployment to complete. The personal site
+The `Publish website` workflow runs after every push or merge to `main`.
+It builds and deploys the site without installing dependencies or creating commits.
+Wait for that workflow to succeed. The personal site
 will be at `https://saptarshi7889.github.io/`; project websites retain their
 existing repository-specific addresses.
+
+The build adds the deployed commit SHA to local page, CSS, JavaScript, image,
+and video URLs, replacing manually maintained version parameters. Every page
+checks `release.json` without browser caching when opened or refocused, and
+redirects to a versioned URL if a newer deployment is available. This preserves
+the page's fragment (for example, `#repulsive`). The check does not run in local
+`file:` previews and does not clear unrelated browser data.
+
+GitHub Pages still controls HTTP cache headers. The first deployment of this
+mechanism may require one ordinary cache expiry or hard refresh because older
+pages do not yet contain the version check. A merge is visible only after its
+deployment finishes; this does not bypass deployment time or CDN propagation.
 
 ## Add another project
 
