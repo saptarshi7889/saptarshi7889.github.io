@@ -42,16 +42,17 @@
           <button class="impurity-trigger" id="impurity-trigger" type="button" aria-expanded="false" aria-controls="protocol-options">Impurity</button>
         </div>
         <div class="impurity-options" id="protocol-options" hidden>
-          <button class="impurity-option" type="button" data-protocol="quenched"><span>Quenched <small>Constant Momentum</small></span><canvas width="640" height="280" data-motion="quenched" role="img" aria-label="Impurity slowing toward steady velocity through a Bose gas"></canvas></button>
-          <button class="impurity-option" type="button" data-protocol="driven"><span>Driven <small>Constant Force</small></span><canvas width="640" height="280" data-motion="driven" role="img" aria-label="Impurity undergoing Bloch oscillations with drift under a constant force"></canvas></button>
+          <button class="impurity-option" type="button" data-protocol="quenched"><span>Quenched <small>Constant Momentum</small></span></button>
+          <button class="impurity-option" type="button" data-protocol="driven"><span>Driven <small>Constant Force</small></span></button>
         </div>
         <div id="interaction-step" hidden>
           <h3>Choose the interaction</h3>
           <div class="impurity-options">
-            <a class="impurity-option" data-interaction="repulsive" href="quenched.html#repulsive"><span>Repulsive <small>Density dip</small></span><canvas width="640" height="280" data-motion="repulsive" role="img" aria-label="A ball drops into a liquid, pushing particles away and forming a density dip"></canvas></a>
-            <a class="impurity-option" data-interaction="attractive" href="quenched-attractive.html#attractive"><span>Attractive <small>Density peak</small></span><canvas width="640" height="280" data-motion="attractive" role="img" aria-label="A ball drops into a liquid, drawing particles together and forming a density peak"></canvas></a>
+            <button class="impurity-option" type="button" data-interaction="repulsive" aria-pressed="false"><span>Repulsive <small>Density dip</small></span></button>
+            <button class="impurity-option" type="button" data-interaction="attractive" aria-pressed="false"><span>Attractive <small>Density peak</small></span></button>
           </div>
         </div>
+        <p id="impurity-result" hidden><a class="quiet-link" id="impurity-details" href="quenched.html#repulsive">Explore this case</a></p>
         <div class="impurity-controls"><button id="impurity-pause" type="button">Pause animations</button><button id="impurity-replay" type="button">Replay animations</button></div>
         <p class="impurity-status" id="impurity-status" aria-live="polite">Choose an impurity protocol.</p>
         <p class="impurity-note">Illustrative animations.</p>

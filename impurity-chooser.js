@@ -25,14 +25,13 @@
   const pause = document.getElementById('impurity-pause');
   const replay = document.getElementById('impurity-replay');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const scenes = Array.from(root.querySelectorAll('canvas'), canvas => ({canvas, mode: canvas.dataset.motion}));
   const style = getComputedStyle(root);
   const colors = { tube: style.getPropertyValue('--teal').trim(), ink: style.getPropertyValue('--ink').trim() };
   let time = reduced ? SETTINGS.duration : 0;
   let playing = !reduced;
   let previous = null;
   let dropped = false, stageTime = 0, selectedProtocol = 'quenched';
-  let awaitingDrop = false, previewProtocol = null, previewInteraction = null;
+  let awaitingDrop = false, previewProtocol = null, previewInteraction = null, selectedInteraction = null;
 
   function drawStage() {
     const ctx = pipe.getContext('2d');
@@ -46,7 +45,8 @@
     const y = dropped ? SETTINGS.stageStartY+(SETTINGS.tubeY+SETTINGS.stageOffset-SETTINGS.stageStartY)*fall*fall : SETTINGS.stageStartY;
     ctx.setTransform(SETTINGS.scale,0,0,SETTINGS.scale,0,0);
     ctx.clearRect(0,0,SETTINGS.width,SETTINGS.stageHeight);
-    const direction = previewInteraction==='repulsive' ? 1 : previewInteraction==='attractive' ? -1 : 0;
+    const interaction = previewInteraction || selectedInteraction;
+    const direction = interaction==='repulsive' ? 1 : interaction==='attractive' ? -1 : 0;
     const surfaceY = bx => SETTINGS.tubeTop+SETTINGS.stageOffset+direction*SETTINGS.dipHeight*Math.exp(-(((bx-x)/SETTINGS.profileWidth)**2));
     ctx.fillStyle=colors.tube; ctx.globalAlpha=SETTINGS.tubeOpacity;
     for(let bx=SETTINGS.left;bx<SETTINGS.right;bx+=SETTINGS.pixelStep) {
@@ -97,66 +97,7 @@
     for(let i=0;i<4;i++) ctx.fillRect(end-direction*i,y-i,2,i*2+2);
     ctx.font = '10px monospace'; ctx.fillText(label,Math.min(x,end),y-6);
   }
-  function tube(ctx) {
-    ctx.fillStyle = colors.tube; ctx.globalAlpha = SETTINGS.tubeOpacity;
-    ctx.fillRect(SETTINGS.left,SETTINGS.tubeTop,SETTINGS.right-SETTINGS.left,SETTINGS.tubeBottom-SETTINGS.tubeTop);
-    ctx.globalAlpha = SETTINGS.edgeOpacity;
-    for(const y of [SETTINGS.tubeTop,SETTINGS.tubeBottom]) ctx.fillRect(SETTINGS.left,y,SETTINGS.right-SETTINGS.left,2);
-    ctx.globalAlpha = 1;
-  }
-  function drawMotion(ctx, mode) {
-    tube(ctx);
-    const m = motion(mode,time), camera = Math.max(0,m.x-SETTINGS.cameraLimit), x = Math.round(m.x-camera);
-    for(let bx=SETTINGS.left-camera%SETTINGS.spacing; bx<SETTINGS.right; bx+=SETTINGS.spacing) {
-      if(bx>20 && Math.abs(bx-x)>18) ball(ctx,bx,SETTINGS.tubeY,SETTINGS.particleRadius);
-    }
-    ball(ctx,x,SETTINGS.tubeY,SETTINGS.radius,true);
-    arrow(ctx,x,114,Math.sign(m.v)*Math.max(5,Math.abs(m.v)*SETTINGS.arrowScale),'v',colors.ink);
-    if(mode==='driven') arrow(ctx,x+7,34,SETTINGS.forceLength,'F',SETTINGS.particleColor);
-  }
-  function response(t) {
-    return 1-Math.exp(-Math.max(0,t-SETTINGS.dropTime)/SETTINGS.responseTime);
-  }
-  function surface(x, mode, amount) {
-    const distance = (x-SETTINGS.center)/SETTINGS.profileWidth;
-    const sign = mode==='repulsive' ? 1 : -1;
-    return SETTINGS.tubeTop+sign*SETTINGS.dipHeight*amount*Math.exp(-distance*distance);
-  }
-  function drawInteraction(ctx, mode) {
-    const amount = response(time), direction = mode==='repulsive' ? 1 : -1;
-    // A surface cross-section illustrates depletion or accumulation, not a GPE solution.
-    ctx.fillStyle = colors.tube; ctx.globalAlpha = SETTINGS.tubeOpacity;
-    for(let x=SETTINGS.left;x<SETTINGS.right;x+=SETTINGS.pixelStep) {
-      const y = Math.round(surface(x,mode,amount));
-      ctx.fillRect(x,y,SETTINGS.pixelStep,SETTINGS.tubeBottom-y);
-    }
-    ctx.globalAlpha = SETTINGS.edgeOpacity;
-    for(let x=SETTINGS.left;x<SETTINGS.right;x+=SETTINGS.pixelStep) ctx.fillRect(x,Math.round(surface(x,mode,amount)),SETTINGS.pixelStep,2);
-    ctx.globalAlpha = 1;
-    for(let row=0;row<SETTINGS.particleRows;row++) {
-      for(let initial=23;initial<SETTINGS.right;initial+=SETTINGS.spacing) {
-        const distance = initial-SETTINGS.center;
-        const displacement = direction*SETTINGS.displacement*amount*Math.tanh(distance/SETTINGS.profileWidth)*Math.exp(-Math.abs(distance)/(SETTINGS.profileWidth*2));
-        const x = initial+displacement;
-        const y = surface(x,mode,amount)+8+row*SETTINGS.rowSpacing;
-        if(Math.hypot(x-SETTINGS.center,y-SETTINGS.dropEnd)>SETTINGS.radius+3) ball(ctx,x,y,SETTINGS.particleRadius);
-      }
-    }
-    const drop = Math.min(1,time/SETTINGS.dropTime);
-    const y = SETTINGS.dropStart+(SETTINGS.dropEnd-SETTINGS.dropStart)*drop*drop;
-    ball(ctx,SETTINGS.center,y,SETTINGS.radius,true);
-  }
-  function render() {
-    drawStage();
-    for(const scene of scenes) {
-      const isProtocol = scene.mode==='quenched' || scene.mode==='driven';
-      if(isProtocol ? protocols.hidden : interactions.hidden) continue;
-      const ctx = scene.canvas.getContext('2d');
-      ctx.setTransform(SETTINGS.scale,0,0,SETTINGS.scale,0,0);
-      ctx.clearRect(0,0,SETTINGS.width,SETTINGS.height);
-      if(isProtocol) drawMotion(ctx,scene.mode); else drawInteraction(ctx,scene.mode);
-    }
-  }
+  function render() { drawStage(); }
   function controls() { pause.textContent = playing ? 'Pause animations' : 'Play animations'; }
   function restart() {
     time = reduced ? SETTINGS.duration : 0;
@@ -187,14 +128,15 @@
     option.addEventListener('click',()=>{
       const protocol = option.dataset.protocol;
       selectedProtocol=protocol;
-      previewProtocol=null; previewInteraction=null;
+      previewProtocol=null; previewInteraction=null; selectedInteraction=null;
+      document.getElementById('impurity-result').hidden=true;
+      for(const button of root.querySelectorAll('[data-interaction]')) button.setAttribute('aria-pressed','false');
       stageTime=SETTINGS.dropTime;
       protocols.hidden=true; trigger.setAttribute('aria-expanded','false');
       interactions.hidden=false;
-      for(const link of root.querySelectorAll('[data-interaction]')) link.href=`${protocol}${link.dataset.interaction==='attractive' ? '-attractive' : ''}.html#${link.dataset.interaction}`;
       status.textContent = `${protocol==='quenched' ? 'Quenched' : 'Driven'} selected. Choose Repulsive or Attractive.`;
       restart();
-      interactions.querySelector('a').focus();
+      interactions.querySelector('button').focus();
     });
   }
   for(const option of root.querySelectorAll('[data-interaction]')) {
@@ -204,6 +146,16 @@
     option.addEventListener('focus',preview);
     option.addEventListener('pointerleave',clear);
     option.addEventListener('blur',clear);
+    option.addEventListener('click',()=>{
+      selectedInteraction=option.dataset.interaction; previewInteraction=null;
+      for(const button of root.querySelectorAll('[data-interaction]')) button.setAttribute('aria-pressed',String(button===option));
+      const details=document.getElementById('impurity-details');
+      details.href=`${selectedProtocol}${selectedInteraction==='attractive' ? '-attractive' : ''}.html#${selectedInteraction}`;
+      details.textContent=`Explore ${selectedInteraction} ${selectedProtocol}`;
+      document.getElementById('impurity-result').hidden=false;
+      status.textContent=`${selectedInteraction==='attractive' ? 'Attractive' : 'Repulsive'} ${selectedProtocol} selected.`;
+      render();
+    });
   }
   pause.addEventListener('click',()=>{
     if(time>=SETTINGS.duration) time=0;

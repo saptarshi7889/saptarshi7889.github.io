@@ -21,9 +21,9 @@
 .impurity-trigger { position: absolute; left: 50%; top: 22%; width: var(--impurity-button-size); aspect-ratio: 1; border: 3px solid var(--impurity-blue-edge); border-radius: 50%; padding: 0; background: var(--impurity-blue); color: var(--white); box-shadow: inset 8px 8px 0 var(--impurity-blue-light), inset -10px -8px 0 var(--impurity-blue-edge); transform: translate(-50%, -50%); font: 600 1rem ui-monospace, monospace; cursor: pointer; text-shadow: 1px 1px var(--impurity-blue-edge); }
 .impurity-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
 .impurity-option { display: block; min-width: 0; padding: 1rem; border: 2px solid var(--line); border-radius: 3px; background: var(--white); color: var(--ink); text-decoration: none; text-align: left; font: 500 1rem ui-monospace, monospace; cursor: pointer; }
+.impurity-option[aria-pressed="true"] { border-color: var(--teal); background: var(--wash); }
 .impurity-option:hover { border-color: var(--teal); background: var(--wash); }
 .impurity-option small { display: block; margin-top: .3rem; color: var(--muted); font: 400 .875rem system-ui, sans-serif; }
-.impurity-option canvas { display: block; width: 100%; height: auto; image-rendering: pixelated; margin-top: .75rem; }
 #interaction-step h3 { font-size: 1.15rem; font-weight: 500; margin: 1.5rem 0 0; }
 .impurity-controls { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
 .impurity-controls button { border: 1px solid var(--line); background: var(--white); padding: .65rem 1rem; color: var(--ink); font: inherit; cursor: pointer; }
