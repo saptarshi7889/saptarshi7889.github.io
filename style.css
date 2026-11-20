@@ -110,3 +110,37 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
   .footer { flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Impurity protocol navigation and dedicated project pages. */
+.project-intro, .protocol-intro { font-size: 1rem; max-width: 48rem; }
+.project-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin-top: 2rem; border-bottom: 2px solid var(--teal); font-size: 1rem; }
+.project-tabs a { display: flex; align-items: center; padding: 1.3rem 1.5rem; border: 1px solid var(--line); border-bottom: 0; background: var(--white); text-decoration: none; font-weight: 600; }
+.project-tabs a + a { border-left: 0; }
+.project-tabs a:hover { background: var(--wash); }
+.project-tabs a[aria-current="page"] { background: var(--ink); color: var(--white); }
+.project-tabs a:focus-visible { position: relative; z-index: 1; }
+.protocol-page { padding-block: 4rem; }
+.protocol-page h1 { max-width: 58rem; font-size: clamp(2.5rem, 4.5vw, 3.75rem); }
+.protocol-page h2 { font-size: clamp(2rem, 3vw, 2.75rem); }
+.protocol-page h3 { font-size: 1.2rem; line-height: 1.4; font-weight: 500; }
+.protocol-section { padding-block: 2.5rem; border-bottom: 1px solid var(--line); }
+.protocol-section:last-of-type { margin-bottom: 2rem; }
+.protocol-section p, .code-links { font-size: 1rem; }
+.paper-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.paper-entry { border-top: 1px solid var(--line); padding-top: 1rem; }
+.paper-kind { color: var(--teal); font-size: .875rem !important; }
+.paper-entry h3 { margin-block: .5rem 1rem; }
+.protocol-section .button { font-size: 1rem; margin-block: 1rem; }
+.code-links { padding-left: 1.25rem; overflow-wrap: anywhere; }
+.code-links li { padding-block: .35rem; }
+.protocol-media { margin: 2rem 0; padding: 1.5rem; background: var(--white); border: 1px solid var(--line); }
+.protocol-media h3 { margin-top: 0; }
+.protocol-media figcaption { font-size: .875rem; letter-spacing: 0; }
+.protocol-media p { margin-bottom: 0; }
+.media-note { max-width: 55rem; }
+@media (max-width: 600px) {
+  .project-tabs, .paper-grid { grid-template-columns: 1fr; }
+  .project-tabs a + a { border-left: 1px solid var(--line); }
+  .protocol-page { padding-block: 2.5rem; }
+  .protocol-media { padding: 1rem; }
+}
