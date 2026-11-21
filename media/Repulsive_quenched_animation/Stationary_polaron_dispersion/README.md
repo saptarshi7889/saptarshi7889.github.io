@@ -65,7 +65,7 @@ Run with an existing environment containing NumPy, SciPy, Matplotlib and
 Pillow, plus the existing GStreamer pngdec/x264enc/mp4mux plugins:
 
 ```sh
-MPLCONFIGDIR=/tmp/stationary-polaron-mpl python media/Stationary_polaron_dispersion/animate.py
+MPLCONFIGDIR=/tmp/stationary-polaron-mpl python media/Repulsive_quenched_animation/Stationary_polaron_dispersion/animate.py
 ```
 
 No dependencies were installed for this work. Rendering reuses the available
