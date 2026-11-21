@@ -1,0 +1,37 @@
+{
+  "source": "https://arxiv.org/pdf/2507.10402v2",
+  "equations": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "mass_ratio": 6.0,
+  "coupling": 1.0,
+  "gamma": 0.1,
+  "checks": {
+    "max_eq9_residual": 1.4988010832439613e-15,
+    "max_dimensionless_hellmann_feynman_error": 9.257384144145675e-06,
+    "critical_velocity_over_sound": 0.4249396651548045,
+    "critical_scaled_velocity": 0.3934176831909357,
+    "branch_join_momenta": [
+      1.3359192762596404,
+      3.141592653589793,
+      4.947266030919946
+    ]
+  },
+  "frames": 243,
+  "fps": 43.2,
+  "duration_seconds": 5.625,
+  "spatial_units": "x/xi",
+  "density_units": "|psi0|^2/n0",
+  "density_interval": [
+    -10.0,
+    10.0
+  ],
+  "blue": "first solution, larger tanh(x0), shallower density dip",
+  "red": "second solution, smaller tanh(x0), deeper density dip",
+  "interpretation": "stationary momentum sweep; not a quench or time evolution"
+}
