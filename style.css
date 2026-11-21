@@ -151,6 +151,7 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
 .protocol-section { padding-block: 2.5rem; border-bottom: 1px solid var(--line); }
 .protocol-section:last-of-type { margin-bottom: 2rem; }
 .protocol-section p, .code-links { font-size: 1rem; }
+.publication-callout { font-size: 1.125rem; font-weight: 500; }
 .paper-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
 .paper-entry { border-top: 1px solid var(--line); padding-top: 1rem; }
 .paper-kind { color: var(--teal); font-size: .875rem !important; }
