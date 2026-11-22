@@ -36,9 +36,10 @@
     <section class="projects wrap" id="projects" aria-labelledby="projects-title">
       <p class="eyebrow">SELECTED PROJECTS</p>
       <nav class="project-tabs selected-project-tabs" aria-label="Selected projects">
-        <a href="#projects" aria-current="page">1D Bose polaron GPE solver</a>
-        <a href="langevin.html">Langevin Monte-Carlo</a>
+        <a href="#langevin" data-project="langevin" aria-controls="langevin">Langevin Monte-Carlo</a>
+        <a href="#gpe" data-project="gpe" aria-controls="gpe" aria-current="page">1D Bose polaron GPE solver</a>
       </nav>
+      <div id="gpe" class="project-panel">
       <div class="section-heading"><div><h2 id="projects-title">1D Bose polaron GPE solver</h2></div><p>A C++17 library for the coupled Gross–Pitaevskii equation and impurity velocity, with fresh runs and compressed-checkpoint continuation.</p></div>
       <p class="project-intro">Choose an impurity protocol to explore its papers, recorded dynamics, and code libraries.</p>
       <div class="impurity-chooser" id="impurity-chooser" hidden>
@@ -65,6 +66,27 @@
         <a href="quenched.html">Constant momentum (Quenched) impurity</a>
         <a href="driven.html">Constant force (driven) impurity</a>
       </nav>
+      </div>
+      <div id="langevin" class="project-panel" hidden>
+        <h2>Langevin Monte-Carlo</h2>
+    <p class="protocol-intro">Research software from my doctoral work on the zero-temperature phases of an XXZ spin chain coupled to independent local dissipative baths.</p>
+    <section class="protocol-section" aria-labelledby="overview">
+      <h3 id="overview">Dissipation, ordering and transport.</h3>
+      <p>Bosonization maps the quantum spin chain onto a classical field theory in space and imaginary time, with bath-induced interactions that are long-ranged along imaginary time. Langevin sampling helps explore the transition from a Luttinger liquid to a gapless spin density wave at incommensurate magnetization, or to a gapped antiferromagnet at zero magnetization.</p>
+      <p>The package provides C++17 header libraries and a native Python interface for both models, including initial simulations, checkpoint continuation and measurements of field roughness and ordering.</p>
+      <a class="button" href="https://github.com/saptarshi7889/Langevin-Monte-Carlo">GitHub repository</a>
+    </section>
+    <section class="protocol-section" aria-labelledby="codes">
+      <h3 id="codes">Codes and libraries</h3>
+      <ul class="code-links">
+        <li><a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/blob/main/include/langevin/incommensurate.hpp">Incommensurate C++ library: initial and continued simulations</a></li>
+        <li><a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/blob/main/include/langevin/commensurate.hpp">Commensurate C++ library: initial and continued simulations</a></li>
+        <li><a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/tree/main/src">C++ simulation programs</a></li>
+        <li><a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/tree/main/python/langevin_monte_carlo">Python interface</a></li>
+        <li><a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/blob/main/README.md#for-python-users">Python setup and usage guide</a></li>
+      </ul>
+    </section>
+      </div>
     </section>
 
     <section class="background-section" id="background" aria-labelledby="background-title">
@@ -75,6 +97,7 @@
     <section class="wrap find-me" id="profiles"><div><p class="eyebrow">EXPLORE FURTHER</p><h2>Research and code.</h2></div><div class="profile-links"><a href="https://scholar.google.com/citations?hl=en&amp;user=vskyUCEAAAAJ"><span>Google Scholar</span><span aria-hidden="true">↗</span></a><a href="https://github.com/saptarshi7889"><span>GitHub</span><span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/smajumdar7889/"><span>LinkedIn</span><span aria-hidden="true">↗</span></a><a href="https://orcid.org/0000-0003-2153-8320"><span>ORCID</span><span aria-hidden="true">↗</span></a><a href="Saptarshi_Majumdar_CV.pdf"><span>Curriculum vitae (PDF)</span></a></div></section>
   </main>
   <footer class="footer wrap"><span>Saptarshi Majumdar</span><span>Quantum physics · Scientific computing</span></footer>
+  <script src="project-tabs.js" defer></script>
   <script src="impurity-chooser.js?v=20261120-autostop" defer></script>
 </body>
 </html>
