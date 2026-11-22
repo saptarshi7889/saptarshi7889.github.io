@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "velocity",
+    "source": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_driven/G-0.8/m0.333/F1.tar.gz::F1/dx8000/impurity_velocity_herm_G-0.8m0.333333F1dx0.000125dt0.01L2400_finite_difference_contd_rep1.dat",
+    "cache": "velocity_9.npy",
+    "dt": 0.01,
+    "dx": 0.000125,
+    "length": 2400.0,
+    "start": 37.5,
+    "end": 109.0
+  },
+  {
+    "kind": "velocity",
+    "source": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_driven/G-0.8/m0.333/F1.tar.gz::F1/dx8000/impurity_velocity_herm_G-0.8m0.333333F1dx0.000125dt0.01L2400_massdep_finite_difference.dat",
+    "cache": "velocity_20.npy",
+    "dt": 0.01,
+    "dx": 0.000125,
+    "length": 2400.0,
+    "start": 0.0,
+    "end": 38.9
+  },
+  {
+    "kind": "velocity",
+    "source": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_driven/G-0.8/m0.333/F1.tar.gz::F1/dx12000/impurity_velocity_herm_G-0.8m0.333333F1dx8.33333e-05dt0.01L2400_massdep_finite_difference.dat",
+    "cache": "velocity_55.npy",
+    "dt": 0.01,
+    "dx": 8.333333333333333e-05,
+    "length": 2400.0,
+    "start": 0.0,
+    "end": 47.9
+  }
+]

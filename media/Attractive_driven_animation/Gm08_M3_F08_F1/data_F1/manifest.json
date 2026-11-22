@@ -1,0 +1,23 @@
+[
+  {
+    "kind": "velocity",
+    "source": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_driven/G-0.8/m0.333/F1_dt0.0025.tar.gz::F1_dt0.0025/impurity_velocity_herm_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_finite_difference_contd_rep3.dat",
+    "cache": "velocity_12.npy",
+    "start": 97.0,
+    "end": 115.0
+  },
+  {
+    "kind": "velocity",
+    "source": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_driven/G-0.8/m0.333/F1_dt0.0025.tar.gz::F1_dt0.0025/impurity_velocity_herm_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_massdep_finite_difference.dat",
+    "cache": "velocity_25.npy",
+    "start": 0.0,
+    "end": 34.0
+  },
+  {
+    "kind": "velocity",
+    "source": "/run/media/sap/Seagate/Attractive_impurity_raw_data/Codes/Impurity_Thomas_Data/Delta_Impurity_optimum/Attractive_impurity/Attractive_driven/G-0.8/m0.333/F1_dt0.0025.tar.gz::F1_dt0.0025/impurity_velocity_herm_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_finite_difference_contd_rep2.dat",
+    "cache": "velocity_50.npy",
+    "start": 64.0,
+    "end": 97.6
+  }
+]
