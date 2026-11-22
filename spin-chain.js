@@ -167,29 +167,27 @@
     if (frame === null && !panel.hidden && !document.hidden) frame = requestAnimationFrame(tick);
   }
 
-  function navigateToResults() {
-    if (!coupled) return;
-    const destination = !fieldOn ? 'langevin-antiferromagnet.html'
-      : subohmic ? 'langevin-subohmic.html' : 'langevin-ohmic.html';
-    window.location.assign(destination);
+  function updateResults() {
+    const selected = !fieldOn ? 'antiferromagnet' : subohmic ? 'subohmic' : 'ohmic';
+    document.getElementById('spin-results').hidden = !coupled;
+    document.querySelectorAll('[data-spin-result]').forEach(result => {
+      result.hidden = !coupled || result.dataset.spinResult !== selected;
+    });
   }
 
   field.addEventListener('click', () => {
     fieldOn = !fieldOn;
     updateOrder();
     wake();
-    navigateToResults();
   });
   bathButton.addEventListener('click', () => {
     subohmic = !subohmic;
     updateOrder();
-    navigateToResults();
   });
   couplingButton.addEventListener('click', () => {
     coupled = !coupled;
     updateOrder();
     wake();
-    navigateToResults();
   });
   function updateOrder() {
     field.setAttribute('aria-pressed', String(fieldOn));
@@ -203,7 +201,8 @@
       : fieldOn ? 'Spin density wave · Sᶻ' : 'Antiferromagnet · alternating Sᶻ';
     status.textContent = !coupled
       ? 'Choose the field and bath type, then turn on bath-chain coupling to explore the results.'
-      : 'Opening the results for the selected configuration.';
+      : 'Results for the selected configuration are shown below.';
+    updateResults();
   }
   function updateMotion() {
     motion.setAttribute('aria-pressed', String(paused));
