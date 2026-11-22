@@ -6,7 +6,7 @@ Static personal homepage for **https://saptarshi7889.github.io/**.
 - `quenched.html`: constant-momentum papers, code/header links, and animation.
 - `driven.html`: constant-force papers, code/header links, and animations.
 - `gpe.html`: GPE solver animation and impurity protocol chooser.
-- `langevin.html`: dissipative XXZ animation with coupling, bath-type, and magnetic-field controls.
+- `langevin.html`: dissipative XXZ animation with coupling, bath-type, and magnetic-field controls; the selected results appear below the animation.
 - `langevin-antiferromagnet.html`, `langevin-ohmic.html`, and `langevin-subohmic.html`: paper links, results placeholders, and the corresponding GitHub model.
 - `style.css`: desktop and mobile layout.
 - `media/quenched/`: relaxation and quantum-flutter MP4/GIFs, previews,

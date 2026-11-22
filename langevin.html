@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Langevin Monte-Carlo — research and scientific software by Saptarshi Majumdar.">
+  <meta name="description" content="Open Quantum System — research and scientific software by Saptarshi Majumdar.">
   <meta name="theme-color" content="#183f48">
-  <title>Langevin Monte-Carlo · Saptarshi Majumdar</title>
+  <title>Open Quantum System · Saptarshi Majumdar</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,18 +15,14 @@
     <nav aria-label="Main navigation"><a href="index.html#projects">Projects</a><a href="index.html#background">Background</a><a href="index.html#profiles">Profiles</a></nav>
   </header>
   <main id="main" class="wrap protocol-page">
-    <p class="eyebrow">SELECTED PROJECTS</p>
-    <nav class="project-tabs selected-project-tabs" aria-label="Selected projects">
-      <a href="langevin.html" aria-current="page">Langevin Monte-Carlo</a>
-      <a href="gpe.html">1D Bose polaron GPE solver</a>
-    </nav>
+    <p class="eyebrow">OPEN QUANTUM SYSTEM</p>
     <div id="langevin">
-    <h1>Langevin Monte-Carlo</h1>
+    <h1>Open Quantum System</h1>
         <div class="spin-demo">
           <div class="spin-field-control">
-            <button id="spin-coupling" type="button" aria-pressed="false" aria-controls="spin-scene">Bath-chain coupling<span id="spin-coupling-state">OFF</span></button>
-            <button id="spin-bath" type="button" aria-pressed="false">Bath type<span id="spin-bath-state">Ohmic</span></button>
-            <button id="spin-field" type="button" aria-pressed="false" aria-controls="spin-scene">External magnetic field<span id="spin-field-state">OFF</span></button>
+            <button id="spin-coupling" type="button" aria-pressed="false" aria-controls="spin-scene spin-results">Bath-chain coupling<span id="spin-coupling-state">OFF</span></button>
+            <button id="spin-bath" type="button" aria-pressed="false" aria-controls="spin-results">Bath type<span id="spin-bath-state">Ohmic</span></button>
+            <button id="spin-field" type="button" aria-pressed="false" aria-controls="spin-scene spin-results">External magnetic field<span id="spin-field-state">OFF</span></button>
             <p id="spin-order">Uncoupled · freely rotating 3D spins</p>
           </div>
           <div class="spin-display">
@@ -38,6 +34,44 @@
           </div>
         </div>
         <p class="impurity-note">Illustrative spin configurations, not a calculated phase diagram. Uncoupled spins rotate freely in 3D; coupled spins show their ordered z components.</p>
+    <section class="spin-results" id="spin-results" aria-label="Selected Monte Carlo study" aria-live="polite" hidden>
+        <div class="spin-result" data-spin-result="antiferromagnet" hidden>
+    <h2>Antiferromagnetic order</h2>
+    <p class="protocol-intro"><a href="https://arxiv.org/abs/2312.13095">Antiferromagnetic order enhanced by local dissipation</a></p>
+    <nav class="project-tabs selected-project-tabs" aria-label="Study sections">
+      <a href="#results-antiferromagnet" aria-current="page">Results</a>
+      <a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/tree/main/src/commensurate">GitHub repository · commensurate model</a>
+    </nav>
+    <section class="protocol-section" id="results-antiferromagnet" aria-labelledby="results-title-antiferromagnet">
+      <h3 id="results-title-antiferromagnet">Results</h3>
+      <p>Coming soon</p>
+    </section>
+        </div>
+        <div class="spin-result" data-spin-result="ohmic" hidden>
+    <h2>Ohmic bath</h2>
+    <p class="protocol-intro"><a href="https://arxiv.org/abs/2210.01590">Bath-induced phase transition in a Luttinger liquid</a></p>
+    <nav class="project-tabs selected-project-tabs" aria-label="Study sections">
+      <a href="#results-ohmic" aria-current="page">Results</a>
+      <a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/tree/main/src/incommensurate">GitHub repository · incommensurate model</a>
+    </nav>
+    <section class="protocol-section" id="results-ohmic" aria-labelledby="results-title-ohmic">
+      <h3 id="results-title-ohmic">Results</h3>
+      <p>Coming soon</p>
+    </section>
+        </div>
+        <div class="spin-result" data-spin-result="subohmic" hidden>
+    <h2>Subohmic bath</h2>
+    <p class="protocol-intro"><a href="https://arxiv.org/abs/2307.07989">Localization induced by spatially uncorrelated subohmic baths in one dimension</a></p>
+    <nav class="project-tabs selected-project-tabs" aria-label="Study sections">
+      <a href="#results-subohmic" aria-current="page">Results</a>
+      <a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/tree/main/src/incommensurate">GitHub repository · incommensurate model</a>
+    </nav>
+    <section class="protocol-section" id="results-subohmic" aria-labelledby="results-title-subohmic">
+      <h3 id="results-title-subohmic">Results</h3>
+      <p>Coming soon</p>
+    </section>
+        </div>
+    </section>
     <p class="protocol-intro">Research software from my doctoral work on the zero-temperature phases of an XXZ spin chain coupled to independent local dissipative baths.</p>
     <section class="protocol-section" aria-labelledby="overview">
       <h2 id="overview">Dissipation, ordering and transport.</h2>
