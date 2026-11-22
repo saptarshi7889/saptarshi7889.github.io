@@ -1,0 +1,22 @@
+[
+  {
+    "member": "F4.1/dx20000/impurity_velocity_herm_G0.5m0.333333F4.1dx5e-05dt0.01L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 5e-05,
+    "length": 1600.0,
+    "kind": "velocity",
+    "cache": "velocity_12.npy",
+    "start": 0.0,
+    "end": 82.7
+  },
+  {
+    "member": "F4.1/dx20000/dt0.0025/impurity_velocity_herm_G0.5m0.333333F4.1dx5e-05dt0.0025L1600_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 5e-05,
+    "length": 1600.0,
+    "kind": "velocity",
+    "cache": "velocity_57.npy",
+    "start": 0.0,
+    "end": 29.5
+  }
+]
