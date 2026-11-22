@@ -205,3 +205,11 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
 #spin-coupling[aria-pressed="true"], #spin-bath[aria-pressed="true"] { box-shadow: inset 3px 3px 0 var(--ink); }
 
 .spin-results[hidden], .spin-result[hidden] { display: none; }
+
+.spin-strength-control { min-width: 0; font: 500 1rem ui-monospace, monospace; }
+.spin-strength-control label { display: block; margin-bottom: .5rem; }
+#spin-strength { display: block; width: 100%; margin: 0; accent-color: var(--teal); cursor: pointer; }
+#spin-strength:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.spin-strength-scale { position: relative; display: flex; justify-content: space-between; padding-top: 1.5rem; font-size: .875rem; }
+#spin-critical { position: absolute; top: 0; transform: translateX(-50%); }
+#spin-critical::before { content: ''; display: block; width: 2px; height: .4rem; margin: 0 auto .2rem; background: var(--ink); }

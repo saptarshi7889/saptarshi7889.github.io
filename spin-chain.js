@@ -6,6 +6,7 @@
     bathY: 170, coupledY: 127, particles: 6, particleSize: 2,
     particleSpeed: 16, turnRate: 2, transitionRate: 5,
     maxStep: 0.05, milliseconds: 1000, snap: 0.001,
+    strengthMin: 0, strengthMax: 100, strengthInitial: 25, strengthCritical: 50,
     resolution: 3, fontSize: 12, spinTurnRate: 0.8, spinSpeed: 1.4,
     depthTilt: 0.35, depthShade: 0.35, pixel: 1, arrowHead: 5, titleY: 21, orderY: 42,
     axisX: 12, axisTop: 51, axisBottom: 107, axisLabelY: 47,
@@ -23,6 +24,12 @@
   const field = document.getElementById('spin-field');
   const couplingButton = document.getElementById('spin-coupling');
   const bathButton = document.getElementById('spin-bath');
+  const strength = document.getElementById('spin-strength');
+  strength.min = S.strengthMin;
+  strength.max = S.strengthMax;
+  strength.value = S.strengthInitial;
+  document.getElementById('spin-critical').style.left =
+    `${(S.strengthCritical - S.strengthMin) / (S.strengthMax - S.strengthMin) * 100}%`;
   const motion = document.getElementById('spin-motion');
   const status = document.getElementById('spin-status');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -31,8 +38,12 @@
   const study = parameters.get('study');
   let fieldOn = study === 'ohmic' || study === 'subohmic';
   let subohmic = study === 'subohmic';
-  let coupled = false, blend = Number(fieldOn), coupling = 0;
+  let coupled = false, blend = Number(fieldOn), coupling = 0, ordering = 0;
   let paused = reduced, previous = null, frame = null;
+  function isOrdered() {
+    return coupled && Number(strength.value) > S.strengthCritical;
+  }
+
   function randomDirection() {
     const z = Math.random() * 2 - 1;
     const angle = Math.random() * period;
@@ -75,13 +86,13 @@
     ctx.fillStyle = S.text;
     ctx.textAlign = 'center';
     ctx.fillText('1D XXZ SPIN CHAIN', S.width / 2, S.titleY);
-    ctx.fillText(!coupled ? 'FREE SPINS / RANDOM 3D ROTATION' : fieldOn ? 'SPIN DENSITY WAVE' : 'ANTIFERROMAGNET / ALTERNATING Z', S.width / 2, S.orderY);
+    ctx.fillText(!coupled ? 'FREE SPINS / RANDOM 3D ROTATION' : !isOrdered() ? 'LUTTINGER LIQUID / FLUCTUATING SPINS' : fieldOn ? 'SPIN DENSITY WAVE' : 'ANTIFERROMAGNET / ALTERNATING Z', S.width / 2, S.orderY);
     ctx.fillText('+z', S.axisX, S.axisLabelY);
     line(S.axisX, S.axisBottom, S.axisX, S.axisTop, S.line);
     line(S.axisX, S.axisTop, S.axisX - S.pixel, S.axisTop + S.arrowHead, S.line);
     line(S.left, S.chainY, S.left + S.spacing * (S.sites - 1), S.chainY, S.line);
-    if (blend * coupling > S.snap) {
-      ctx.globalAlpha = blend * coupling * S.waveOpacity;
+    if (blend * ordering > S.snap) {
+      ctx.globalAlpha = blend * ordering * S.waveOpacity;
       for (let x = 0; x <= S.spacing * (S.sites - 1); x += S.waveStep) {
         const y = S.chainY - S.spinLength * Math.cos(period * x / (S.spacing * (S.sites - 1)));
         block(S.left + x, y, S.pixel, S.pixel, S.up);
@@ -102,10 +113,10 @@
       bath.forEach(p => block(x - S.boxWidth / 2 + S.pixel + p.x,
         y + S.pixel + p.y, S.particleSize, S.particleSize, S.particle));
       const free = spins[index].direction;
-      const freeWeight = 1 - coupling;
+      const freeWeight = 1 - ordering;
       const projectedX = free.x * Math.cos(S.depthTilt) - free.y * Math.sin(S.depthTilt);
       const projectedDepth = free.x * Math.sin(S.depthTilt) + free.y * Math.cos(S.depthTilt);
-      const z = free.z * freeWeight + spinZ(index) * coupling;
+      const z = free.z * freeWeight + spinZ(index) * ordering;
       const dx = S.spinLength * projectedX * freeWeight;
       const dy = -S.spinLength * z;
       const length = Math.hypot(dx, dy);
@@ -134,9 +145,12 @@
     const step = reduced ? 1 : Math.min(1, dt * S.transitionRate);
     blend += (Number(fieldOn) - blend) * step;
     coupling += (Number(coupled) - coupling) * step;
+    const orderTarget = Number(isOrdered());
+    ordering += (orderTarget - ordering) * step;
+    if (Math.abs(orderTarget - ordering) < S.snap) ordering = orderTarget;
     if (Math.abs(Number(fieldOn) - blend) < S.snap) blend = Number(fieldOn);
     if (Math.abs(Number(coupled) - coupling) < S.snap) coupling = Number(coupled);
-    if (!paused && coupling < 1) spins.forEach(spin => {
+    if (!paused && ordering < 1) spins.forEach(spin => {
       if (Math.random() < dt * S.spinTurnRate) spin.axis = randomDirection();
       const a = spin.axis, v = spin.direction;
       const angle = dt * S.spinSpeed;
@@ -160,7 +174,7 @@
       p.y = Math.max(0, Math.min(maxY, p.y));
     }));
     draw();
-    if (!paused || blend !== Number(fieldOn) || coupling !== Number(coupled)) wake();
+    if (!paused || blend !== Number(fieldOn) || coupling !== Number(coupled) || ordering !== orderTarget) wake();
   }
 
   function wake() {
@@ -174,6 +188,11 @@
       result.hidden = !coupled || result.dataset.spinResult !== selected;
     });
   }
+
+  strength.addEventListener('input', () => {
+    updateOrder();
+    wake();
+  });
 
   field.addEventListener('click', () => {
     fieldOn = !fieldOn;
@@ -190,6 +209,9 @@
     wake();
   });
   function updateOrder() {
+    const relativeStrength = Number(strength.value) > S.strengthCritical ? 'Above critical'
+      : Number(strength.value) < S.strengthCritical ? 'Below critical' : 'At critical';
+    strength.setAttribute('aria-valuetext', `${relativeStrength}; schematic coupling strength`);
     field.setAttribute('aria-pressed', String(fieldOn));
     couplingButton.setAttribute('aria-pressed', String(coupled));
     bathButton.setAttribute('aria-pressed', String(subohmic));
@@ -198,10 +220,12 @@
     document.getElementById('spin-bath-state').textContent = subohmic ? 'Subohmic' : 'Ohmic';
     document.getElementById('spin-order').textContent = !coupled
       ? 'Uncoupled · freely rotating 3D spins'
-      : fieldOn ? 'Spin density wave · Sᶻ' : 'Antiferromagnet · alternating Sᶻ';
+      : !isOrdered() ? `${relativeStrength} · Luttinger liquid` : fieldOn ? 'Spin density wave · Sᶻ' : 'Antiferromagnet · alternating Sᶻ';
     status.textContent = !coupled
       ? 'Choose the field and bath type, then turn on bath-chain coupling to explore the results.'
-      : 'Results for the selected configuration are shown below.';
+      : isOrdered()
+        ? 'Above critical: the connected chain develops magnetic order. Results are shown below.'
+        : `${relativeStrength}: connected spins fluctuate without long-range order. Increase coupling strength above critical to order the chain.`;
     updateResults();
   }
   function updateMotion() {
