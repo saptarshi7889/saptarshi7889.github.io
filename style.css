@@ -141,6 +141,7 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
 .project-tabs a:hover { background: var(--wash); }
 .project-tabs a[aria-current="page"] { background: var(--ink); color: var(--white); }
 .project-tabs a:focus-visible { position: relative; z-index: 1; }
+.selected-project-tabs { margin: 0 0 2rem; }
 .case-tabs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .case-animation { margin-block: 2rem; }
 .case-animation canvas { display: block; width: 100%; max-width: 960px; height: auto; image-rendering: pixelated; }
