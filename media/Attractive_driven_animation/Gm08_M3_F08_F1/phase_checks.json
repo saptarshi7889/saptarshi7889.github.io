@@ -1,0 +1,32 @@
+[
+  {
+    "time": 15.0,
+    "audit_stride": 30,
+    "spacing": 0.005,
+    "drops": 1,
+    "rises": 0,
+    "unwrapped_turns": 1.000266135827146,
+    "maximum_adjacent_phase_increment": 0.6480574695676169,
+    "minimum_sampled_density": 6.44847010145e-05
+  },
+  {
+    "time": 39.0,
+    "audit_stride": 30,
+    "spacing": 0.005,
+    "drops": 2,
+    "rises": 0,
+    "unwrapped_turns": 2.0004063456382215,
+    "maximum_adjacent_phase_increment": 0.38904185775001754,
+    "minimum_sampled_density": 0.00019326100763947607
+  },
+  {
+    "time": 63.0,
+    "audit_stride": 30,
+    "spacing": 0.005,
+    "drops": 3,
+    "rises": 0,
+    "unwrapped_turns": 2.9995557641246946,
+    "maximum_adjacent_phase_increment": 0.23812017980441438,
+    "minimum_sampled_density": 0.0005219628034024
+  }
+]

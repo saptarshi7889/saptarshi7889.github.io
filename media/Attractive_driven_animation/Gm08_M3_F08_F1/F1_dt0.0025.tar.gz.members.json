@@ -1,0 +1,374 @@
+[
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time14dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 655247198
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time85dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 652254908
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time83dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651966728
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time84dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 673518971
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time1dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 657184028
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time107dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651507737
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time88dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 664926781
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time15dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 679016218
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time16dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 655457183
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time17dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 654808785
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time71dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 674003384
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time70dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651882359
+  },
+  {
+    "member": "F1_dt0.0025/impurity_velocity_herm_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_finite_difference_contd_rep3.dat",
+    "size": 3015
+  },
+  {
+    "member": "F1_dt0.0025/Norm_evolution_herm_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_finite_difference_contd_rep2.dat",
+    "size": 4313
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time72dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 673537826
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time73dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651949973
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time74dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630121915
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time75dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630047321
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time76dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651928532
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time19dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 654270592
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time7dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 656307091
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time8dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 679816891
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time6dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 632424536
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time18dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 618528586
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time9dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 680020455
+  },
+  {
+    "member": "F1_dt0.0025/impurity_velocity_herm_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_massdep_finite_difference.dat",
+    "size": 5270
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time77dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 686728821
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time78dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 673474546
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time79dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 652227615
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time66dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 665569453
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time65dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 674167041
+  },
+  {
+    "member": "F1_dt0.0025",
+    "size": 0
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time67dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651668338
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time68dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630019784
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time69dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630516972
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time3dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 680830000
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time96dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 672699696
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time86dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651793359
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time87dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630580359
+  },
+  {
+    "member": "F1_dt0.0025/Norm_evolution_herm_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_finite_difference_contd_rep3.dat",
+    "size": 2466
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time21dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 667240150
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time22dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 681196410
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time89dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651620923
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time31dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 629806531
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time13dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 639777945
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time108dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 652308104
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time4dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 656742128
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time5dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 612003767
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time23dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 653975998
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time102dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 656799626
+  },
+  {
+    "member": "F1_dt0.0025/impurity_velocity_herm_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_finite_difference_contd_rep2.dat",
+    "size": 5395
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time30dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 629836674
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time90dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 673203634
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time32dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 652996810
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time33dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 690107335
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time34dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 675491983
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time111dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651540773
+  },
+  {
+    "member": "F1_dt0.0025/Norm_evolution_herm_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_massdep_finite_difference.dat",
+    "size": 4263
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time92dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 652019429
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time114dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651793744
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time112dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 631425638
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time110dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 665408420
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time93dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630903999
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time91dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 673380948
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time113dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 649045055
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time20dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 654458013
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time115dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 672411906
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time82dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651545488
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time105dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651118975
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time12dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 631686490
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time2dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 681043622
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time94dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630940764
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time80dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651692119
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time100dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630929204
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time101dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651642606
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time104dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 652371727
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time81dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630136843
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time103dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 672731950
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time10dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 655941907
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time98dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 652080316
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time99dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 644437147
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time11dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 658979549
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time95dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 651795308
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time97dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 672531481
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time24dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630516326
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time25dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 630453333
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time26dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 638642816
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time27dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 670089345
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time28dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 670120028
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time29dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 653226196
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time109dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 672570340
+  },
+  {
+    "member": "F1_dt0.0025/Phi_solution_herm_G-0.8m0.333333F1time106dt0.0025dx8.33333e-05L2000_massdep_finite_difference.dat",
+    "size": 631161931
+  },
+  {
+    "member": "F1_dt0.0025/Convergence_check_G-0.8m0.333333F1dx8.33333e-05dt0.0025L2000_massdep_finite_difference.dat",
+    "size": 19202
+  }
+]
