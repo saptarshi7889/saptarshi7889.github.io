@@ -182,3 +182,20 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
   .protocol-page { padding-block: 2.5rem; }
   .protocol-media { padding: 1rem; }
 }
+
+/* Pixel spin chain and independent local reservoirs. */
+.spin-demo { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 1.5rem; align-items: center; padding: 1.5rem; border: 1px solid var(--line); background: var(--wash); }
+.spin-field-control button { width: 100%; padding: 1rem; border: 3px solid #782d32; border-radius: 0; background: #b33333; color: white; box-shadow: 4px 4px 0 #782d32; font: 600 1rem ui-monospace, monospace; cursor: pointer; }
+.spin-field-control button[aria-pressed="true"] { background: #dc4545; box-shadow: inset 3px 3px 0 #782d32; }
+.spin-field-control button span { display: block; margin-top: .75rem; }
+.spin-field-control p { font-size: .9rem; }
+.spin-display { min-width: 0; }
+#spin-scene { display: block; width: 100%; padding: 0; border: 2px solid var(--ink); background: #142c35; cursor: pointer; }
+#spin-canvas { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+#spin-status { margin: .75rem 0; font-size: .9rem; }
+#spin-motion { padding: .4rem .6rem; border: 1px solid var(--ink); background: var(--white); color: var(--ink); font: inherit; cursor: pointer; }
+.spin-demo button:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+@media (max-width: 600px) {
+  .spin-demo { grid-template-columns: 110px minmax(0, 1fr); gap: .75rem; padding: .75rem; }
+  .spin-field-control button { padding: .65rem .35rem; font-size: .875rem; }
+}

@@ -69,6 +69,20 @@
       </div>
       <div id="langevin" class="project-panel" hidden>
         <h2>Langevin Monte-Carlo</h2>
+        <div class="spin-demo">
+          <div class="spin-field-control">
+            <button id="spin-field" type="button" aria-pressed="false" aria-controls="spin-scene">External magnetic field<span id="spin-field-state">OFF</span></button>
+            <p id="spin-order">Antiferromagnet · alternating Sᶻ</p>
+          </div>
+          <div class="spin-display">
+            <button id="spin-scene" type="button" aria-pressed="false" aria-describedby="spin-status" aria-label="Couple the independent reservoirs to the spin chain">
+              <canvas id="spin-canvas" width="480" height="240" aria-label="Pixel illustration of a one-dimensional XXZ spin chain and independent particle reservoirs."></canvas>
+            </button>
+            <p id="spin-status" aria-live="polite">Click the animation to couple the reservoirs to the chain.</p>
+            <button id="spin-motion" type="button" aria-pressed="false">Pause particle motion</button>
+          </div>
+        </div>
+        <p class="impurity-note">Illustrative spin configurations, not a calculated phase diagram. Arrow lengths show the z component of each spin.</p>
     <p class="protocol-intro">Research software from my doctoral work on the zero-temperature phases of an XXZ spin chain coupled to independent local dissipative baths.</p>
     <section class="protocol-section" aria-labelledby="overview">
       <h3 id="overview">Dissipation, ordering and transport.</h3>
@@ -97,6 +111,7 @@
     <section class="wrap find-me" id="profiles"><div><p class="eyebrow">EXPLORE FURTHER</p><h2>Research and code.</h2></div><div class="profile-links"><a href="https://scholar.google.com/citations?hl=en&amp;user=vskyUCEAAAAJ"><span>Google Scholar</span><span aria-hidden="true">↗</span></a><a href="https://github.com/saptarshi7889"><span>GitHub</span><span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/smajumdar7889/"><span>LinkedIn</span><span aria-hidden="true">↗</span></a><a href="https://orcid.org/0000-0003-2153-8320"><span>ORCID</span><span aria-hidden="true">↗</span></a><a href="Saptarshi_Majumdar_CV.pdf"><span>Curriculum vitae (PDF)</span></a></div></section>
   </main>
   <footer class="footer wrap"><span>Saptarshi Majumdar</span><span>Quantum physics · Scientific computing</span></footer>
+  <script src="spin-chain.js" defer></script>
   <script src="project-tabs.js" defer></script>
   <script src="impurity-chooser.js?v=20261120-autostop" defer></script>
 </body>
