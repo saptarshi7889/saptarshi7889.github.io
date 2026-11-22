@@ -21,6 +21,11 @@
         <div class="spin-demo">
           <div class="spin-field-control">
             <button id="spin-coupling" type="button" aria-pressed="false" aria-controls="spin-scene spin-results">Bath-chain coupling<span id="spin-coupling-state">OFF</span></button>
+            <div class="spin-strength-control">
+              <label for="spin-strength">Coupling strength</label>
+              <input id="spin-strength" type="range" aria-describedby="spin-strength-note" aria-controls="spin-scene">
+              <div class="spin-strength-scale"><span>Weak</span><span id="spin-critical">Critical</span><span>Strong</span></div>
+            </div>
             <button id="spin-bath" type="button" aria-pressed="false" aria-controls="spin-results">Bath type<span id="spin-bath-state">Ohmic</span></button>
             <button id="spin-field" type="button" aria-pressed="false" aria-controls="spin-scene spin-results">External magnetic field<span id="spin-field-state">OFF</span></button>
             <p id="spin-order">Uncoupled · freely rotating 3D spins</p>
@@ -33,43 +38,40 @@
             <button id="spin-motion" type="button" aria-pressed="false">Pause motion</button>
           </div>
         </div>
-        <p class="impurity-note">Illustrative spin configurations, not a calculated phase diagram. Uncoupled spins rotate freely in 3D; coupled spins show their ordered z components.</p>
+        <p class="impurity-note" id="spin-strength-note">Illustrative spin configurations, not a calculated phase diagram. The critical coupling is schematic. Above it, connected spins develop magnetic order; disconnected spins rotate freely.</p>
     <section class="spin-results" id="spin-results" aria-label="Selected Monte Carlo study" aria-live="polite" hidden>
         <div class="spin-result" data-spin-result="antiferromagnet" hidden>
     <h2>Antiferromagnetic order</h2>
-    <p class="protocol-intro"><a href="https://arxiv.org/abs/2312.13095">Antiferromagnetic order enhanced by local dissipation</a></p>
     <nav class="project-tabs selected-project-tabs" aria-label="Study sections">
       <a href="#results-antiferromagnet" aria-current="page">Results</a>
-      <a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/tree/main/src/commensurate">GitHub repository · commensurate model</a>
     </nav>
     <section class="protocol-section" id="results-antiferromagnet" aria-labelledby="results-title-antiferromagnet">
       <h3 id="results-title-antiferromagnet">Results</h3>
       <p>Coming soon</p>
     </section>
+    <p class="protocol-intro">For more details, please check <a href="https://arxiv.org/abs/2312.13095">Antiferromagnetic order enhanced by local dissipation</a></p>
         </div>
         <div class="spin-result" data-spin-result="ohmic" hidden>
     <h2>Ohmic bath</h2>
-    <p class="protocol-intro"><a href="https://arxiv.org/abs/2210.01590">Bath-induced phase transition in a Luttinger liquid</a></p>
     <nav class="project-tabs selected-project-tabs" aria-label="Study sections">
       <a href="#results-ohmic" aria-current="page">Results</a>
-      <a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/tree/main/src/incommensurate">GitHub repository · incommensurate model</a>
     </nav>
     <section class="protocol-section" id="results-ohmic" aria-labelledby="results-title-ohmic">
       <h3 id="results-title-ohmic">Results</h3>
       <p>Coming soon</p>
     </section>
+    <p class="protocol-intro">For more details, please check <a href="https://arxiv.org/abs/2210.01590">Bath-induced phase transition in a Luttinger liquid</a></p>
         </div>
         <div class="spin-result" data-spin-result="subohmic" hidden>
     <h2>Subohmic bath</h2>
-    <p class="protocol-intro"><a href="https://arxiv.org/abs/2307.07989">Localization induced by spatially uncorrelated subohmic baths in one dimension</a></p>
     <nav class="project-tabs selected-project-tabs" aria-label="Study sections">
       <a href="#results-subohmic" aria-current="page">Results</a>
-      <a href="https://github.com/saptarshi7889/Langevin-Monte-Carlo/tree/main/src/incommensurate">GitHub repository · incommensurate model</a>
     </nav>
     <section class="protocol-section" id="results-subohmic" aria-labelledby="results-title-subohmic">
       <h3 id="results-title-subohmic">Results</h3>
       <p>Coming soon</p>
     </section>
+    <p class="protocol-intro">For more details, please check <a href="https://arxiv.org/abs/2307.07989">Localization induced by spatially uncorrelated subohmic baths in one dimension</a></p>
         </div>
     </section>
     <p class="protocol-intro">Research software from my doctoral work on the zero-temperature phases of an XXZ spin chain coupled to independent local dissipative baths.</p>
