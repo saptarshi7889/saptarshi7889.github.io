@@ -22,7 +22,7 @@
     timeWindow: 10, timeScale: 2.5, ballisticSlope: 0.35,
     ohmicDc: 0.4, ohmicRate: 1.2, subohmicExponent: 0.5,
     afmDamping: 0.8, afmFrequency: 2, currentSpeed: 45, ballisticSpeed: 42, ohmicOpacity: 0.9,
-    currentHead: 4, currentThreshold: 0.005, markerSize: 4,
+    currentHead: 4, currentThreshold: 0.005, markerSize: 4, subohmicArrowDuration: 3,
     currentColor: '#efa3ef', gradientColor: '#c2a5ef'
   };
   const canvas = document.getElementById('spin-canvas');
@@ -185,8 +185,12 @@
       ? `${stepCurrent(regime, probeTime).toFixed(2)} (arbitrary units)` : 'Probe off';
   }
 
+  function subohmicArrowsStopped() {
+    return responseRegime() === 'subohmic' && probeTime >= R.subohmicArrowDuration * R.timeScale;
+  }
+
   function drawCurrent() {
-    if (!probeOn) return;
+    if (!probeOn || subohmicArrowsStopped()) return;
     const current = stepCurrent(responseRegime(), probeTime);
     if (Math.abs(current) < R.currentThreshold) return;
     const direction = Math.sign(current);
@@ -273,7 +277,7 @@
       // Bound only the visual speed; the ballistic current itself keeps growing.
       const speed = responseRegime() === 'ballistic'
         ? R.ballisticSpeed * Math.tanh(current) : R.currentSpeed * current;
-      currentPhase += speed * dt / S.spacing;
+      if (!subohmicArrowsStopped()) currentPhase += speed * dt / S.spacing;
     }
     const step = reduced ? 1 : Math.min(1, dt * S.transitionRate);
     blend += (Number(fieldOn) - blend) * step;
@@ -387,7 +391,7 @@
       : regime === 'ohmic'
         ? 'Ohmic dissipative phase: finite DC conductivity; the current settles to a nonzero value.'
         : regime === 'subohmic'
-          ? 'Subohmic dissipative phase: Re σs ∝ ω^(1−s), illustrated with s = 0.5; the transient current decays toward zero.'
+          ? 'Subohmic dissipative phase: Re σs ∝ ω^(1−s), illustrated with s = 0.5; the transient current decays toward zero. For clarity, bond arrows stop after 3 seconds; the graph retains the tail.'
           : 'Commensurate AFM: zero DC conductivity; an oscillating transient decays toward zero.';
     document.getElementById('spin-dc').textContent = `DC conductivity - ${
       regime === 'ballistic' ? 'perfect (Luttinger liquid)'
