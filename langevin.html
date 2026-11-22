@@ -28,17 +28,22 @@
             </div>
             <button id="spin-bath" type="button" aria-pressed="false" aria-controls="spin-results">Bath type<span id="spin-bath-state">Ohmic</span></button>
             <button id="spin-field" type="button" aria-pressed="false" aria-controls="spin-scene spin-results">External magnetic field<span id="spin-field-state">OFF</span></button>
+            <button id="spin-probe" type="button" aria-pressed="false" aria-controls="spin-scene spin-response">Weak field gradient<span id="spin-probe-state">OFF</span></button>
             <p id="spin-order">Uncoupled · freely rotating 3D spins</p>
           </div>
           <div class="spin-display">
             <div id="spin-scene" aria-describedby="spin-status">
               <canvas id="spin-canvas" width="1440" height="720" aria-label="Pixel illustration of a one-dimensional XXZ spin chain and independent particle reservoirs."></canvas>
             </div>
+            <canvas id="spin-response" width="1440" height="630" role="img" aria-label="Schematic longitudinal spin conductivity and spin current after applying a weak field gradient."></canvas>
+            <p id="spin-dc" aria-live="polite">DC conductivity - perfect (Luttinger liquid)</p>
+            <p id="spin-response-status" aria-live="polite"></p>
+            <p class="spin-current-readout">Spin current: <span id="spin-current">Probe off</span></p>
             <p id="spin-status" aria-live="polite">Choose the field and bath type, then turn on bath-chain coupling to explore the results.</p>
             <button id="spin-motion" type="button" aria-pressed="false">Pause motion</button>
           </div>
         </div>
-        <p class="impurity-note" id="spin-strength-note">Illustrative spin configurations, not a calculated phase diagram. The critical coupling is schematic. Above it, connected spins develop magnetic order; disconnected spins rotate freely.</p>
+        <p class="impurity-note" id="spin-strength-note">Illustrative spin configurations, not a calculated phase diagram. The critical coupling and response curves are schematic, at T = 0. Bond chevrons show transport of Sᶻ, not motion of the spins. The weak field gradient is a separate linear-response probe; current and time use arbitrary units. Above it, connected spins develop magnetic order; disconnected spins rotate freely.</p>
     <section class="spin-results" id="spin-results" aria-label="Selected Monte Carlo study" aria-live="polite" hidden>
         <div class="spin-result" data-spin-result="antiferromagnet" hidden>
     <h2>Antiferromagnetic order</h2>

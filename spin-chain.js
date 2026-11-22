@@ -15,11 +15,29 @@
     up: '#ffce64', down: '#69c7e2', bath: '#284852',
     bathEdge: '#69c7a6', particle: '#f18b89', coupling: '#d6a8ee'
   };
+  const R = {
+    height: 210, top: 51, bottom: 155, spectrumLeft: 34, spectrumRight: 210,
+    timeLeft: 275, timeRight: 452, titleY: 19, chartTitleY: 39,
+    axisLabelY: 174, footerY: 197, samples: 90, frequencyMax: 3,
+    timeWindow: 10, timeScale: 2.5, ballisticSlope: 0.35,
+    ohmicDc: 0.4, ohmicRate: 1.2, subohmicExponent: 0.5,
+    afmDamping: 0.8, afmFrequency: 2, currentSpeed: 45,
+    currentHead: 4, currentThreshold: 0.005, markerSize: 4,
+    currentColor: '#efa3ef', gradientColor: '#c2a5ef'
+  };
   const canvas = document.getElementById('spin-canvas');
   canvas.width = S.width * S.resolution;
   canvas.height = S.height * S.resolution;
   const ctx = canvas.getContext('2d');
   ctx.scale(S.resolution, S.resolution);
+  const responseCanvas = document.getElementById('spin-response');
+  responseCanvas.width = S.width * S.resolution;
+  responseCanvas.height = R.height * S.resolution;
+  const responseCtx = responseCanvas.getContext('2d');
+  responseCtx.scale(S.resolution, S.resolution);
+  const probe = document.getElementById('spin-probe');
+  const responseStatus = document.getElementById('spin-response-status');
+  const currentReadout = document.getElementById('spin-current');
   const panel = document.getElementById('langevin');
   const field = document.getElementById('spin-field');
   const couplingButton = document.getElementById('spin-coupling');
@@ -40,6 +58,7 @@
   let subohmic = study === 'subohmic';
   let coupled = false, blend = Number(fieldOn), coupling = 0, ordering = 0;
   let paused = reduced, previous = null, frame = null;
+  let probeOn = false, probeTime = 0, currentPhase = 0, previousRegime = null;
   function isOrdered() {
     return coupled && Number(strength.value) > S.strengthCritical;
   }
@@ -78,6 +97,107 @@
     const afm = index % 2 === 0 ? 1 : -1;
     const wave = Math.cos(period * index / (S.sites - 1));
     return afm * (1 - blend) + wave * blend;
+  }
+
+  function responseRegime() {
+    if (!isOrdered()) return 'ballistic';
+    if (!fieldOn) return 'afm';
+    return subohmic ? 'subohmic' : 'ohmic';
+  }
+
+  // Illustrative step responses: asymptotic behavior is physical; amplitudes and
+  // transient shapes are not fitted to a microscopic calculation.
+  function stepCurrent(regime, time) {
+    if (regime === 'ballistic') return R.ballisticSlope * time;
+    if (regime === 'ohmic') return R.ohmicDc * (1 - Math.exp(-R.ohmicRate * time));
+    if (regime === 'subohmic') {
+      return (1 - Math.exp(-R.ohmicRate * time)) * Math.pow(1 + time, R.subohmicExponent - 1);
+    }
+    return Math.exp(-R.afmDamping * time) * Math.sin(R.afmFrequency * time);
+  }
+
+  function drawResponse() {
+    const regime = responseRegime();
+    const c = responseCtx;
+    c.fillStyle = S.background;
+    c.fillRect(0, 0, S.width, R.height);
+    c.font = `${S.fontSize}px monospace`;
+    c.textAlign = 'center';
+    c.fillStyle = S.text;
+    c.fillText('LONGITUDINAL RESPONSE / T = 0', S.width / 2, R.titleY);
+    c.fillText('Re σs(ω)', (R.spectrumLeft + R.spectrumRight) / 2, R.chartTitleY);
+    c.fillText('Spin current jᶻ(t)', (R.timeLeft + R.timeRight) / 2, R.chartTitleY);
+    function segment(x1, y1, x2, y2, color) {
+      c.strokeStyle = color;
+      c.lineWidth = S.pixel;
+      c.beginPath(); c.moveTo(x1, y1); c.lineTo(x2, y2); c.stroke();
+    }
+    for (const [left, right] of [[R.spectrumLeft, R.spectrumRight], [R.timeLeft, R.timeRight]]) {
+      segment(left, R.top, left, R.bottom, S.line);
+      segment(left, R.bottom, right, R.bottom, S.line);
+    }
+    c.fillText('0', R.spectrumLeft, R.axisLabelY);
+    c.fillText('ω', R.spectrumRight, R.axisLabelY);
+    c.fillText('0', R.timeLeft, R.axisLabelY);
+    c.fillText('t', R.timeRight, R.axisLabelY);
+    const plotHeight = R.bottom - R.top;
+    if (regime === 'ballistic') {
+      segment(R.spectrumLeft, R.bottom, R.spectrumLeft, R.top, R.currentColor);
+      segment(R.spectrumLeft, R.top, R.spectrumLeft - S.arrowHead, R.top + S.arrowHead, R.currentColor);
+      segment(R.spectrumLeft, R.top, R.spectrumLeft + S.arrowHead, R.top + S.arrowHead, R.currentColor);
+      c.fillText('δ(ω)', (R.spectrumLeft + R.spectrumRight) / 2, R.top + S.fontSize);
+    } else {
+      let last = null;
+      for (let i = 0; i <= R.samples; i++) {
+        const w = R.frequencyMax * i / R.samples;
+        const value = regime === 'ohmic' ? R.ohmicDc / (1 + w * w)
+          : regime === 'subohmic' ? Math.pow(w, 1 - R.subohmicExponent) / (1 + w * w)
+          : w * w / (1 + w * w);
+        const point = [R.spectrumLeft + (R.spectrumRight - R.spectrumLeft) * i / R.samples,
+          R.bottom - plotHeight * value];
+        if (last) segment(...last, ...point, R.currentColor);
+        last = point;
+      }
+    }
+    const horizon = Math.max(R.timeWindow, probeTime);
+    const currentMax = regime === 'ballistic' ? Math.max(1, R.ballisticSlope * horizon) : 1;
+    // Leave space below zero for the AFM's oscillating transient.
+    const zeroY = regime === 'afm' ? (R.top + R.bottom) / 2 : R.bottom;
+    const currentHeight = zeroY - R.top;
+    if (regime === 'afm') segment(R.timeLeft, zeroY, R.timeRight, zeroY, S.line);
+    let last = null;
+    for (let i = 0; i <= R.samples; i++) {
+      const point = [R.timeLeft + (R.timeRight - R.timeLeft) * i / R.samples,
+        zeroY - currentHeight * stepCurrent(regime, horizon * i / R.samples) / currentMax];
+      if (last) segment(...last, ...point, R.currentColor);
+      last = point;
+    }
+    if (probeOn) {
+      const x = R.timeLeft + (R.timeRight - R.timeLeft) * probeTime / horizon;
+      const y = zeroY - currentHeight * stepCurrent(regime, probeTime) / currentMax;
+      c.fillStyle = R.currentColor;
+      c.fillRect(x - R.markerSize / 2, y - R.markerSize / 2, R.markerSize, R.markerSize);
+    }
+    c.fillStyle = S.text;
+    c.fillText(probeOn ? '∂xh_z > 0 / WEAK PROBE ON' : 'WEAK FIELD GRADIENT OFF', S.width / 2, R.footerY);
+    currentReadout.textContent = probeOn
+      ? `${stepCurrent(regime, probeTime).toFixed(2)} (arbitrary units)` : 'Probe off';
+  }
+
+  function drawCurrent() {
+    if (!probeOn) return;
+    const current = stepCurrent(responseRegime(), probeTime);
+    if (Math.abs(current) < R.currentThreshold) return;
+    const direction = Math.sign(current);
+    ctx.globalAlpha = Math.min(1, Math.abs(current));
+    for (let i = 0; i < S.sites - 1; i++) {
+      const fraction = ((currentPhase % 1) + 1) % 1;
+      const x = S.left + S.spacing * (i + fraction);
+      const head = R.currentHead * direction;
+      line(x - head, S.chainY - R.currentHead, x, S.chainY, R.currentColor);
+      line(x - head, S.chainY + R.currentHead, x, S.chainY, R.currentColor);
+    }
+    ctx.globalAlpha = 1;
   }
 
   function draw() {
@@ -134,6 +254,8 @@
       ctx.globalAlpha = 1;
       block(x - S.pixel, S.chainY - S.pixel, S.pixel * 2, S.pixel * 2, S.text);
     });
+    drawCurrent();
+    drawResponse();
     ctx.fillStyle = S.text;
     ctx.fillText(coupled ? 'LOCAL RESERVOIRS / COUPLED' : 'INDEPENDENT LOCAL RESERVOIRS', S.width / 2, S.bathLabelY);
   }
@@ -142,6 +264,10 @@
     frame = null;
     const dt = previous === null ? 0 : Math.min((now - previous) / S.milliseconds, S.maxStep);
     previous = now;
+    if (probeOn && !paused) {
+      probeTime += dt * R.timeScale;
+      currentPhase += stepCurrent(responseRegime(), probeTime) * R.currentSpeed * dt / S.spacing;
+    }
     const step = reduced ? 1 : Math.min(1, dt * S.transitionRate);
     blend += (Number(fieldOn) - blend) * step;
     coupling += (Number(coupled) - coupling) * step;
@@ -189,6 +315,15 @@
     });
   }
 
+  probe.addEventListener('click', () => {
+    probeOn = !probeOn;
+    probeTime = 0;
+    currentPhase = 0;
+    updateResponse();
+    draw();
+    wake();
+  });
+
   strength.addEventListener('input', () => {
     updateOrder();
     wake();
@@ -202,6 +337,7 @@
   bathButton.addEventListener('click', () => {
     subohmic = !subohmic;
     updateOrder();
+    wake();
   });
   couplingButton.addEventListener('click', () => {
     coupled = !coupled;
@@ -227,7 +363,34 @@
         ? 'Above critical: the connected chain develops magnetic order. Results are shown below.'
         : `${relativeStrength}: connected spins fluctuate without long-range order. Increase coupling strength above critical to order the chain.`;
     updateResults();
+    updateResponse();
   }
+  function updateResponse() {
+    const regime = responseRegime();
+    if (regime !== previousRegime) {
+      probeTime = 0;
+      currentPhase = 0;
+      previousRegime = regime;
+    }
+    probe.setAttribute('aria-pressed', String(probeOn));
+    document.getElementById('spin-probe-state').textContent = probeOn ? 'ON' : 'OFF';
+    const description = regime === 'ballistic'
+      ? 'Luttinger liquid: Drude delta peak; a sustained gradient produces a growing ballistic current.'
+      : regime === 'ohmic'
+        ? 'Ohmic dissipative phase: finite DC conductivity; the current settles to a nonzero value.'
+        : regime === 'subohmic'
+          ? 'Subohmic dissipative phase: Re σs ∝ ω^(1−s), illustrated with s = 0.5; the transient current decays toward zero.'
+          : 'Commensurate AFM: zero DC conductivity; an oscillating transient decays toward zero.';
+    document.getElementById('spin-dc').textContent = `DC conductivity - ${
+      regime === 'ballistic' ? 'perfect (Luttinger liquid)'
+        : regime === 'ohmic' ? 'reduced (Ohmic spin density wave)'
+          : regime === 'afm' ? 'zero (antiferromagnet)' : 'zero (subohmic spin density wave)'
+    }`;
+    responseStatus.textContent = `${description} ${probeOn ? 'Probe on; switch off and on to replay.' : 'Turn on the weak field gradient to animate the response.'}`;
+    responseCanvas.setAttribute('aria-label', `Schematic T = 0 response. ${description}`);
+    drawResponse();
+  }
+
   function updateMotion() {
     motion.setAttribute('aria-pressed', String(paused));
     motion.textContent = paused ? 'Resume motion' : 'Pause motion';
