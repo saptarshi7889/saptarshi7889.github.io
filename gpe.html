@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="1D Bose polaron GPE solver — research and scientific software by Saptarshi Majumdar.">
+  <meta name="theme-color" content="#183f48">
+  <title>1D Bose polaron GPE solver · Saptarshi Majumdar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="wordmark" href="index.html">Saptarshi Majumdar<span>PHYSICS · COMPUTATION · RESEARCH</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#projects">Projects</a><a href="index.html#background">Background</a><a href="index.html#profiles">Profiles</a></nav>
+  </header>
+  <main id="main" class="wrap protocol-page">
+    <p class="eyebrow">SELECTED PROJECTS</p>
+    <nav class="project-tabs selected-project-tabs" aria-label="Selected projects">
+      <a href="langevin.html">Langevin Monte-Carlo</a>
+      <a href="gpe.html" aria-current="page">1D Bose polaron GPE solver</a>
+    </nav>
+      <div class="section-heading"><div><h2 id="projects-title">1D Bose polaron GPE solver</h2></div><p>A C++17 library for the coupled Gross–Pitaevskii equation and impurity velocity, with fresh runs and compressed-checkpoint continuation.</p></div>
+      <p class="project-intro">Choose an impurity protocol to explore its papers, recorded dynamics, and code libraries.</p>
+      <div class="impurity-chooser" id="impurity-chooser" hidden>
+        <div class="impurity-stage">
+          <canvas id="impurity-pipe" width="640" height="380" role="img" aria-label="A blue impurity drops into a pipe of red bosons when clicked, then follows the selected protocol."></canvas>
+          <button class="impurity-trigger" id="impurity-trigger" type="button" aria-expanded="false" aria-controls="protocol-options">Impurity</button>
+        </div>
+        <div class="impurity-options" id="protocol-options" hidden>
+          <button class="impurity-option" type="button" data-protocol="quenched"><span>Quenched <small>Constant Momentum</small></span></button>
+          <button class="impurity-option" type="button" data-protocol="driven"><span>Driven <small>Constant Force</small></span></button>
+        </div>
+        <div id="interaction-step" hidden>
+          <h3>Choose the interaction</h3>
+          <div class="impurity-options">
+            <button class="impurity-option" type="button" data-interaction="repulsive"><span>Repulsive <small>Density dip</small></span></button>
+            <button class="impurity-option" type="button" data-interaction="attractive"><span>Attractive <small>Density peak</small></span></button>
+          </div>
+        </div>
+        <div class="impurity-controls"><button id="impurity-replay" type="button">Replay animations</button></div>
+        <p class="impurity-status" id="impurity-status" aria-live="polite">Choose an impurity protocol.</p>
+        <p class="impurity-note">Illustrative animations.</p>
+      </div>
+      <nav class="project-tabs" id="protocol-fallback" aria-label="Impurity protocols">
+        <a href="quenched.html">Constant momentum (Quenched) impurity</a>
+        <a href="driven.html">Constant force (driven) impurity</a>
+      </nav>
+
+  </main>
+  <footer class="footer wrap"><span>Saptarshi Majumdar</span><span>Quantum physics · Scientific computing</span></footer>
+  <script src="impurity-chooser.js?v=20261120-autostop" defer></script>
+</body>
+</html>

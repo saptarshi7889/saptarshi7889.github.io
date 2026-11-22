@@ -6,8 +6,8 @@
     bathY: 170, coupledY: 127, particles: 6, particleSize: 2,
     particleSpeed: 16, turnRate: 2, transitionRate: 5,
     maxStep: 0.05, milliseconds: 1000, snap: 0.001,
-    resolution: 2, fontSize: 10, spinTurnRate: 0.8, spinSpeed: 1.4,
-    depthTilt: 0.35, depthShade: 0.35, pixel: 1, arrowHead: 5, labelX: 14, titleY: 21, orderY: 42,
+    resolution: 3, fontSize: 12, spinTurnRate: 0.8, spinSpeed: 1.4,
+    depthTilt: 0.35, depthShade: 0.35, pixel: 1, arrowHead: 5, titleY: 21, orderY: 42,
     axisX: 12, axisTop: 51, axisBottom: 107, axisLabelY: 47,
     bathLabelY: 229, waveStep: 4, waveOpacity: 0.4,
     background: '#142c35', line: '#54717a', text: '#e0eee5',
@@ -21,12 +21,17 @@
   ctx.scale(S.resolution, S.resolution);
   const panel = document.getElementById('langevin');
   const field = document.getElementById('spin-field');
-  const scene = document.getElementById('spin-scene');
+  const couplingButton = document.getElementById('spin-coupling');
+  const bathButton = document.getElementById('spin-bath');
   const motion = document.getElementById('spin-motion');
   const status = document.getElementById('spin-status');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const period = Math.PI * 2;
-  let fieldOn = false, coupled = false, blend = 0, coupling = 0;
+  const parameters = new URLSearchParams(window.location.search);
+  const study = parameters.get('study');
+  let fieldOn = study === 'ohmic' || study === 'subohmic';
+  let subohmic = study === 'subohmic';
+  let coupled = false, blend = Number(fieldOn), coupling = 0;
   let paused = reduced, previous = null, frame = null;
   function randomDirection() {
     const z = Math.random() * 2 - 1;
@@ -68,8 +73,9 @@
     block(0, 0, S.width, S.height, S.background);
     ctx.font = `${S.fontSize}px monospace`;
     ctx.fillStyle = S.text;
-    ctx.fillText('1D XXZ SPIN CHAIN', S.labelX, S.titleY);
-    ctx.fillText(!coupled ? 'FREE SPINS / RANDOM 3D ROTATION' : fieldOn ? 'SPIN DENSITY WAVE / ONE PERIOD' : 'ANTIFERROMAGNET / ALTERNATING Z', S.labelX, S.orderY);
+    ctx.textAlign = 'center';
+    ctx.fillText('1D XXZ SPIN CHAIN', S.width / 2, S.titleY);
+    ctx.fillText(!coupled ? 'FREE SPINS / RANDOM 3D ROTATION' : fieldOn ? 'SPIN DENSITY WAVE' : 'ANTIFERROMAGNET / ALTERNATING Z', S.width / 2, S.orderY);
     ctx.fillText('+z', S.axisX, S.axisLabelY);
     line(S.axisX, S.axisBottom, S.axisX, S.axisTop, S.line);
     line(S.axisX, S.axisTop, S.axisX - S.pixel, S.axisTop + S.arrowHead, S.line);
@@ -118,7 +124,7 @@
       block(x - S.pixel, S.chainY - S.pixel, S.pixel * 2, S.pixel * 2, S.text);
     });
     ctx.fillStyle = S.text;
-    ctx.fillText(coupled ? 'LOCAL RESERVOIRS / COUPLED' : 'INDEPENDENT LOCAL RESERVOIRS', S.labelX, S.bathLabelY);
+    ctx.fillText(coupled ? 'LOCAL RESERVOIRS / COUPLED' : 'INDEPENDENT LOCAL RESERVOIRS', S.width / 2, S.bathLabelY);
   }
 
   function tick(now) {
@@ -161,27 +167,43 @@
     if (frame === null && !panel.hidden && !document.hidden) frame = requestAnimationFrame(tick);
   }
 
+  function navigateToResults() {
+    if (!coupled) return;
+    const destination = !fieldOn ? 'langevin-antiferromagnet.html'
+      : subohmic ? 'langevin-subohmic.html' : 'langevin-ohmic.html';
+    window.location.assign(destination);
+  }
+
   field.addEventListener('click', () => {
     fieldOn = !fieldOn;
-    field.setAttribute('aria-pressed', String(fieldOn));
-    document.getElementById('spin-field-state').textContent = fieldOn ? 'ON' : 'OFF';
     updateOrder();
     wake();
+    navigateToResults();
   });
-  scene.addEventListener('click', () => {
+  bathButton.addEventListener('click', () => {
+    subohmic = !subohmic;
+    updateOrder();
+    navigateToResults();
+  });
+  couplingButton.addEventListener('click', () => {
     coupled = !coupled;
-    scene.setAttribute('aria-pressed', String(coupled));
-    scene.setAttribute('aria-label', coupled ? 'Decouple the reservoirs from the spin chain' : 'Couple the independent reservoirs to the spin chain');
     updateOrder();
     wake();
+    navigateToResults();
   });
   function updateOrder() {
+    field.setAttribute('aria-pressed', String(fieldOn));
+    couplingButton.setAttribute('aria-pressed', String(coupled));
+    bathButton.setAttribute('aria-pressed', String(subohmic));
+    document.getElementById('spin-field-state').textContent = fieldOn ? 'ON' : 'OFF';
+    document.getElementById('spin-coupling-state').textContent = coupled ? 'ON' : 'OFF';
+    document.getElementById('spin-bath-state').textContent = subohmic ? 'Subohmic' : 'Ohmic';
     document.getElementById('spin-order').textContent = !coupled
       ? 'Uncoupled · freely rotating 3D spins'
-      : fieldOn ? 'Spin density wave · one period of Sᶻ' : 'Antiferromagnet · alternating Sᶻ';
+      : fieldOn ? 'Spin density wave · Sᶻ' : 'Antiferromagnet · alternating Sᶻ';
     status.textContent = !coupled
-      ? 'Reservoirs uncoupled: spins rotate freely. Click to couple and establish magnetic order.'
-      : `${fieldOn ? 'Field on: one period of a spin density wave.' : 'Field off: antiferromagnetic order.'} Click the animation to decouple and release the spins.`;
+      ? 'Choose the field and bath type, then turn on bath-chain coupling to explore the results.'
+      : 'Opening the results for the selected configuration.';
   }
   function updateMotion() {
     motion.setAttribute('aria-pressed', String(paused));
