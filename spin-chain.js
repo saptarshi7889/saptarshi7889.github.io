@@ -21,7 +21,7 @@
     axisLabelY: 174, footerY: 197, samples: 90, frequencyMax: 3,
     timeWindow: 10, timeScale: 2.5, ballisticSlope: 0.35,
     ohmicDc: 0.4, ohmicRate: 1.2, subohmicExponent: 0.5,
-    afmDamping: 0.8, afmFrequency: 2, currentSpeed: 45, ballisticSpeed: 28, ohmicOpacity: 0.9,
+    afmDamping: 0.8, afmFrequency: 2, currentSpeed: 45, ballisticSpeed: 42, ohmicOpacity: 0.9,
     currentHead: 4, currentThreshold: 0.005, markerSize: 4,
     currentColor: '#efa3ef', gradientColor: '#c2a5ef'
   };
@@ -316,9 +316,8 @@
 
   function updateResults() {
     const selected = !fieldOn ? 'antiferromagnet' : subohmic ? 'subohmic' : 'ohmic';
-    document.getElementById('spin-results').hidden = !coupled;
     document.querySelectorAll('[data-spin-result]').forEach(result => {
-      result.hidden = !coupled || result.dataset.spinResult !== selected;
+      result.hidden = result.dataset.spinResult !== selected;
     });
   }
 
@@ -365,9 +364,9 @@
       ? 'Uncoupled · freely rotating 3D spins'
       : !isOrdered() ? `${relativeStrength} · Luttinger liquid` : fieldOn ? 'Spin density wave · Sᶻ' : 'Antiferromagnet · alternating Sᶻ';
     status.textContent = !coupled
-      ? 'Choose the field and bath type, then turn on bath-chain coupling to explore the results.'
+      ? 'Choose the field and bath type to explore the corresponding study below; turn on bath-chain coupling to animate its phases.'
       : isOrdered()
-        ? 'Above critical: the connected chain develops magnetic order. Results are shown below.'
+        ? 'Above critical: the connected chain develops magnetic order. The corresponding paper is linked below.'
         : `${relativeStrength}: connected spins fluctuate without long-range order. Increase coupling strength above critical to order the chain.`;
     updateResults();
     updateResponse();
