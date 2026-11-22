@@ -1,0 +1,1014 @@
+[
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time61dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_4.npz",
+    "time": 61.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time40dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_5.npz",
+    "time": 40.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time33dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_7.npz",
+    "time": 33.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time12dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_8.npz",
+    "time": 12.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time26dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_9.npz",
+    "time": 26.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time54dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_13.npz",
+    "time": 54.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time46dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_16.npz",
+    "time": 46.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time53dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_17.npz",
+    "time": 53.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time39dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_19.npz",
+    "time": 39.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time18dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_24.npz",
+    "time": 18.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time67dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_25.npz",
+    "time": 67.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time65dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_26.npz",
+    "time": 65.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time25dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_27.npz",
+    "time": 25.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time50dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_31.npz",
+    "time": 50.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time31dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_32.npz",
+    "time": 31.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time47.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_36.npz",
+    "time": 47.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time10dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_37.npz",
+    "time": 10.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time5dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_38.npz",
+    "time": 5.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time66dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_43.npz",
+    "time": 66.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time3dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_44.npz",
+    "time": 3.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time59dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_45.npz",
+    "time": 59.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time60dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_47.npz",
+    "time": 60.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time23dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_49.npz",
+    "time": 23.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time51dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_52.npz",
+    "time": 51.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time67.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_54.npz",
+    "time": 67.5
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time15dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_55.npz",
+    "time": 15.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time30dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_56.npz",
+    "time": 30.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time44dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_58.npz",
+    "time": 44.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time16dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_61.npz",
+    "time": 16.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time49dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_65.npz",
+    "time": 49.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time52.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_66.npz",
+    "time": 52.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time29dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_67.npz",
+    "time": 29.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/impurity_velocity_herm_G0.5m0.333333F3.5dx0.000166667dt0.0025L4800_finite_difference_contd_rep2.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "velocity",
+    "cache": "velocity_71.npy",
+    "start": 104.0,
+    "end": 109.9
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time36dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_73.npz",
+    "time": 36.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time25dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_74.npz",
+    "time": 25.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time64dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_75.npz",
+    "time": 64.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time10dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_76.npz",
+    "time": 10.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time57dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_77.npz",
+    "time": 57.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time21dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_85.npz",
+    "time": 21.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time37.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_87.npz",
+    "time": 37.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time14dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_90.npz",
+    "time": 14.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time9dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_92.npz",
+    "time": 9.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time62dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_95.npz",
+    "time": 62.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time1dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_101.npz",
+    "time": 1.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time34dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_103.npz",
+    "time": 34.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time57.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_104.npz",
+    "time": 57.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time41dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_106.npz",
+    "time": 41.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time55dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_107.npz",
+    "time": 55.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time27dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_110.npz",
+    "time": 27.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time42.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_114.npz",
+    "time": 42.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time7dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_121.npz",
+    "time": 7.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time55dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_122.npz",
+    "time": 55.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_123.npz",
+    "time": 5.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time68dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_124.npz",
+    "time": 68.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time47dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_126.npz",
+    "time": 47.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time40dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_128.npz",
+    "time": 40.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time19dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_129.npz",
+    "time": 19.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time62.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_131.npz",
+    "time": 62.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time32dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_132.npz",
+    "time": 32.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time60dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_134.npz",
+    "time": 60.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time11dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_136.npz",
+    "time": 11.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time6dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_137.npz",
+    "time": 6.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time27.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_138.npz",
+    "time": 27.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time38dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_141.npz",
+    "time": 38.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time52dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_144.npz",
+    "time": 52.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time12.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_147.npz",
+    "time": 12.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/impurity_velocity_herm_G0.5m0.333333F3.5dx0.000166667dt0.0025L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "velocity",
+    "cache": "velocity_150.npy",
+    "start": 0.0,
+    "end": 44.5
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time2.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_151.npz",
+    "time": 2.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time24dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_154.npz",
+    "time": 24.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time45dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_155.npz",
+    "time": 45.0
+  },
+  {
+    "member": "F3.5/dx6000/impurity_velocity_herm_G0.5m0.333333F3.5dx0.000166667dt0.01L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "velocity",
+    "cache": "velocity_157.npy",
+    "start": 0.0,
+    "end": 142.6
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time17dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_160.npz",
+    "time": 17.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time42dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_161.npz",
+    "time": 42.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time32.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_162.npz",
+    "time": 32.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time4dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_164.npz",
+    "time": 4.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time58dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_165.npz",
+    "time": 58.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time65dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_168.npz",
+    "time": 65.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time37dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_171.npz",
+    "time": 37.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time70dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_174.npz",
+    "time": 70.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time50dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_177.npz",
+    "time": 50.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time43dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_178.npz",
+    "time": 43.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time22dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_179.npz",
+    "time": 22.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time17.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_181.npz",
+    "time": 17.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time15dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_184.npz",
+    "time": 15.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time7.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_186.npz",
+    "time": 7.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time2dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_188.npz",
+    "time": 2.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time56dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_191.npz",
+    "time": 56.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time70dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_192.npz",
+    "time": 70.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time28dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_195.npz",
+    "time": 28.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time35dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_196.npz",
+    "time": 35.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time63dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_198.npz",
+    "time": 63.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time35dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_200.npz",
+    "time": 35.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time20dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_204.npz",
+    "time": 20.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time13dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_206.npz",
+    "time": 13.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/impurity_velocity_herm_G0.5m0.333333F3.5dx0.000166667dt0.0025L4800_finite_difference_contd_rep1.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "velocity",
+    "cache": "velocity_207.npy",
+    "start": 44.0,
+    "end": 104.1
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time22.5dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_208.npz",
+    "time": 22.5
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time20dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_210.npz",
+    "time": 20.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time8dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_211.npz",
+    "time": 8.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time69dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_212.npz",
+    "time": 69.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time45dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_213.npz",
+    "time": 45.0
+  },
+  {
+    "member": "F3.5/dx6000/Phi_solution_herm_G0.5m0.333333F3.5time30dt0.01dx0.000166667L1600_massdep_finite_difference.dat",
+    "dt": 0.01,
+    "dx": 0.00016666666666666666,
+    "length": 1600.0,
+    "kind": "density",
+    "cache": "density_217.npz",
+    "time": 30.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time48dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_218.npz",
+    "time": 48.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time74dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_21.npz",
+    "time": 74.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time72dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_51.npz",
+    "time": 72.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time71dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_72.npz",
+    "time": 71.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time77dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_93.npz",
+    "time": 77.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time75dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_116.npz",
+    "time": 75.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time73dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_127.npz",
+    "time": 73.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time80dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_148.npz",
+    "time": 80.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time79dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_167.npz",
+    "time": 79.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time78dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_187.npz",
+    "time": 78.0
+  },
+  {
+    "member": "F3.5/dx6000/dt0.0025_L4800/Phi_solution_herm_G0.5m0.333333F3.5time76dt0.0025dx0.000166667L4800_massdep_finite_difference.dat",
+    "dt": 0.0025,
+    "dx": 0.00016666666666666666,
+    "length": 4800.0,
+    "kind": "density",
+    "cache": "density_209.npz",
+    "time": 76.0
+  }
+]
