@@ -6,7 +6,8 @@
     bathY: 170, coupledY: 127, particles: 6, particleSize: 2,
     particleSpeed: 16, turnRate: 2, transitionRate: 5,
     maxStep: 0.05, milliseconds: 1000, snap: 0.001,
-    pixel: 2, arrowHead: 6, labelX: 14, titleY: 21, orderY: 42,
+    resolution: 2, fontSize: 10, spinTurnRate: 0.8, spinSpeed: 1.4,
+    depthTilt: 0.35, depthShade: 0.35, pixel: 1, arrowHead: 5, labelX: 14, titleY: 21, orderY: 42,
     axisX: 12, axisTop: 51, axisBottom: 107, axisLabelY: 47,
     bathLabelY: 229, waveStep: 4, waveOpacity: 0.4,
     background: '#142c35', line: '#54717a', text: '#e0eee5',
@@ -14,7 +15,10 @@
     bathEdge: '#69c7a6', particle: '#f18b89', coupling: '#d6a8ee'
   };
   const canvas = document.getElementById('spin-canvas');
+  canvas.width = S.width * S.resolution;
+  canvas.height = S.height * S.resolution;
   const ctx = canvas.getContext('2d');
+  ctx.scale(S.resolution, S.resolution);
   const panel = document.getElementById('langevin');
   const field = document.getElementById('spin-field');
   const scene = document.getElementById('spin-scene');
@@ -24,6 +28,15 @@
   const period = Math.PI * 2;
   let fieldOn = false, coupled = false, blend = 0, coupling = 0;
   let paused = reduced, previous = null, frame = null;
+  function randomDirection() {
+    const z = Math.random() * 2 - 1;
+    const angle = Math.random() * period;
+    const radius = Math.sqrt(1 - z * z);
+    return { x: radius * Math.cos(angle), y: radius * Math.sin(angle), z };
+  }
+  const spins = Array.from({ length: S.sites }, () => ({
+    direction: randomDirection(), axis: randomDirection()
+  }));
   const particles = Array.from({ length: S.sites }, () =>
     Array.from({ length: S.particles }, () => ({
       x: Math.random() * (S.boxWidth - S.pixel * 2 - S.particleSize),
@@ -53,16 +66,16 @@
 
   function draw() {
     block(0, 0, S.width, S.height, S.background);
-    ctx.font = '10px monospace';
+    ctx.font = `${S.fontSize}px monospace`;
     ctx.fillStyle = S.text;
     ctx.fillText('1D XXZ SPIN CHAIN', S.labelX, S.titleY);
-    ctx.fillText(fieldOn ? 'SPIN DENSITY WAVE / ONE PERIOD' : 'ANTIFERROMAGNET / ALTERNATING Z', S.labelX, S.orderY);
+    ctx.fillText(!coupled ? 'FREE SPINS / RANDOM 3D ROTATION' : fieldOn ? 'SPIN DENSITY WAVE / ONE PERIOD' : 'ANTIFERROMAGNET / ALTERNATING Z', S.labelX, S.orderY);
     ctx.fillText('+z', S.axisX, S.axisLabelY);
     line(S.axisX, S.axisBottom, S.axisX, S.axisTop, S.line);
     line(S.axisX, S.axisTop, S.axisX - S.pixel, S.axisTop + S.arrowHead, S.line);
     line(S.left, S.chainY, S.left + S.spacing * (S.sites - 1), S.chainY, S.line);
-    if (blend > S.snap) {
-      ctx.globalAlpha = blend * S.waveOpacity;
+    if (blend * coupling > S.snap) {
+      ctx.globalAlpha = blend * coupling * S.waveOpacity;
       for (let x = 0; x <= S.spacing * (S.sites - 1); x += S.waveStep) {
         const y = S.chainY - S.spinLength * Math.cos(period * x / (S.spacing * (S.sites - 1)));
         block(S.left + x, y, S.pixel, S.pixel, S.up);
@@ -82,16 +95,26 @@
         S.boxWidth - S.pixel * 2, S.boxHeight - S.pixel * 2, S.bath);
       bath.forEach(p => block(x - S.boxWidth / 2 + S.pixel + p.x,
         y + S.pixel + p.y, S.particleSize, S.particleSize, S.particle));
-      const z = spinZ(index);
-      const tip = S.chainY - S.spinLength * z;
+      const free = spins[index].direction;
+      const freeWeight = 1 - coupling;
+      const projectedX = free.x * Math.cos(S.depthTilt) - free.y * Math.sin(S.depthTilt);
+      const projectedDepth = free.x * Math.sin(S.depthTilt) + free.y * Math.cos(S.depthTilt);
+      const z = free.z * freeWeight + spinZ(index) * coupling;
+      const dx = S.spinLength * projectedX * freeWeight;
+      const dy = -S.spinLength * z;
+      const length = Math.hypot(dx, dy);
+      const tipX = x + dx;
+      const tipY = S.chainY + dy;
       const color = z >= 0 ? S.up : S.down;
-      line(x, S.chainY, x, tip, color);
-      if (Math.abs(z) > S.snap) {
-        const head = Math.min(S.arrowHead, Math.abs(S.spinLength * z));
-        const direction = z >= 0 ? 1 : -1;
-        line(x, tip, x - head, tip + direction * head, color);
-        line(x, tip, x + head, tip + direction * head, color);
+      ctx.globalAlpha = 1 - S.depthShade * freeWeight * (1 - projectedDepth) / 2;
+      line(x, S.chainY, tipX, tipY, color);
+      if (length > S.snap) {
+        const head = Math.min(S.arrowHead, length);
+        const ux = dx / length, uy = dy / length;
+        line(tipX, tipY, tipX - head * (ux + uy), tipY - head * (uy - ux), color);
+        line(tipX, tipY, tipX - head * (ux - uy), tipY - head * (uy + ux), color);
       }
+      ctx.globalAlpha = 1;
       block(x - S.pixel, S.chainY - S.pixel, S.pixel * 2, S.pixel * 2, S.text);
     });
     ctx.fillStyle = S.text;
@@ -107,6 +130,18 @@
     coupling += (Number(coupled) - coupling) * step;
     if (Math.abs(Number(fieldOn) - blend) < S.snap) blend = Number(fieldOn);
     if (Math.abs(Number(coupled) - coupling) < S.snap) coupling = Number(coupled);
+    if (!paused && coupling < 1) spins.forEach(spin => {
+      if (Math.random() < dt * S.spinTurnRate) spin.axis = randomDirection();
+      const a = spin.axis, v = spin.direction;
+      const angle = dt * S.spinSpeed;
+      const c = Math.cos(angle), t = Math.sin(angle), dot = a.x * v.x + a.y * v.y + a.z * v.z;
+      // Rodrigues rotation preserves unit length on the three-dimensional sphere.
+      spin.direction = {
+        x: v.x * c + (a.y * v.z - a.z * v.y) * t + a.x * dot * (1 - c),
+        y: v.y * c + (a.z * v.x - a.x * v.z) * t + a.y * dot * (1 - c),
+        z: v.z * c + (a.x * v.y - a.y * v.x) * t + a.z * dot * (1 - c)
+      };
+    });
     if (!paused) particles.forEach(bath => bath.forEach(p => {
       if (Math.random() < dt * S.turnRate) p.angle = Math.random() * period;
       p.x += Math.cos(p.angle) * S.particleSpeed * dt;
@@ -130,21 +165,27 @@
     fieldOn = !fieldOn;
     field.setAttribute('aria-pressed', String(fieldOn));
     document.getElementById('spin-field-state').textContent = fieldOn ? 'ON' : 'OFF';
-    document.getElementById('spin-order').textContent = fieldOn
-      ? 'Spin density wave · one period of Sᶻ' : 'Antiferromagnet · alternating Sᶻ';
-    status.textContent = `${fieldOn ? 'Field on: one period of a spin density wave.' : 'Field off: antiferromagnetic order.'} Reservoirs ${coupled ? 'coupled.' : 'uncoupled; click the animation to couple them.'}`;
+    updateOrder();
     wake();
   });
   scene.addEventListener('click', () => {
     coupled = !coupled;
     scene.setAttribute('aria-pressed', String(coupled));
     scene.setAttribute('aria-label', coupled ? 'Decouple the reservoirs from the spin chain' : 'Couple the independent reservoirs to the spin chain');
-    status.textContent = coupled ? 'Each reservoir is coupled to its own spin. Click again to decouple.' : 'Reservoirs uncoupled. Click the animation to couple them.';
+    updateOrder();
     wake();
   });
+  function updateOrder() {
+    document.getElementById('spin-order').textContent = !coupled
+      ? 'Uncoupled · freely rotating 3D spins'
+      : fieldOn ? 'Spin density wave · one period of Sᶻ' : 'Antiferromagnet · alternating Sᶻ';
+    status.textContent = !coupled
+      ? 'Reservoirs uncoupled: spins rotate freely. Click to couple and establish magnetic order.'
+      : `${fieldOn ? 'Field on: one period of a spin density wave.' : 'Field off: antiferromagnetic order.'} Click the animation to decouple and release the spins.`;
+  }
   function updateMotion() {
     motion.setAttribute('aria-pressed', String(paused));
-    motion.textContent = paused ? 'Resume particle motion' : 'Pause particle motion';
+    motion.textContent = paused ? 'Resume motion' : 'Pause motion';
   }
   motion.addEventListener('click', () => { paused = !paused; updateMotion(); wake(); });
   function visibilityChanged() {
@@ -157,6 +198,7 @@
   }
   new MutationObserver(visibilityChanged).observe(panel, { attributes: true, attributeFilter: ['hidden'] });
   document.addEventListener('visibilitychange', visibilityChanged);
+  updateOrder();
   updateMotion();
   draw();
   wake();

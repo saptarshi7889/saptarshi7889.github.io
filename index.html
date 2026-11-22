@@ -72,17 +72,17 @@
         <div class="spin-demo">
           <div class="spin-field-control">
             <button id="spin-field" type="button" aria-pressed="false" aria-controls="spin-scene">External magnetic field<span id="spin-field-state">OFF</span></button>
-            <p id="spin-order">Antiferromagnet · alternating Sᶻ</p>
+            <p id="spin-order">Uncoupled · freely rotating 3D spins</p>
           </div>
           <div class="spin-display">
             <button id="spin-scene" type="button" aria-pressed="false" aria-describedby="spin-status" aria-label="Couple the independent reservoirs to the spin chain">
-              <canvas id="spin-canvas" width="480" height="240" aria-label="Pixel illustration of a one-dimensional XXZ spin chain and independent particle reservoirs."></canvas>
+              <canvas id="spin-canvas" width="960" height="480" aria-label="Pixel illustration of a one-dimensional XXZ spin chain and independent particle reservoirs."></canvas>
             </button>
             <p id="spin-status" aria-live="polite">Click the animation to couple the reservoirs to the chain.</p>
-            <button id="spin-motion" type="button" aria-pressed="false">Pause particle motion</button>
+            <button id="spin-motion" type="button" aria-pressed="false">Pause motion</button>
           </div>
         </div>
-        <p class="impurity-note">Illustrative spin configurations, not a calculated phase diagram. Arrow lengths show the z component of each spin.</p>
+        <p class="impurity-note">Illustrative spin configurations, not a calculated phase diagram. Uncoupled spins rotate freely in 3D; coupled spins show their ordered z components.</p>
     <p class="protocol-intro">Research software from my doctoral work on the zero-temperature phases of an XXZ spin chain coupled to independent local dissipative baths.</p>
     <section class="protocol-section" aria-labelledby="overview">
       <h3 id="overview">Dissipation, ordering and transport.</h3>
