@@ -213,3 +213,15 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
 .spin-strength-scale { position: relative; display: flex; justify-content: space-between; padding-top: 1.5rem; font-size: .875rem; }
 #spin-critical { position: absolute; top: 0; transform: translateX(-50%); }
 #spin-critical::before { content: ''; display: block; width: 2px; height: .4rem; margin: 0 auto .2rem; background: var(--ink); }
+
+#spin-probe { border-color: var(--ink); background: #633d7b; box-shadow: 4px 4px 0 var(--ink); }
+#spin-probe[aria-pressed="true"] { background: #80519e; box-shadow: inset 3px 3px 0 var(--ink); }
+#spin-response { display: block; width: 100%; height: auto; background: #142c35; border: 2px solid var(--ink); border-top: 0; image-rendering: pixelated; }
+#spin-response-status, .spin-current-readout { margin: .65rem 0; font-size: .9rem; }
+@media (max-width: 600px) {
+  .spin-demo { grid-template-columns: 1fr; }
+  .spin-field-control { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .spin-field-control p { grid-column: 1 / -1; }
+}
+
+#spin-dc { margin: 1rem 0; text-align: center; font-weight: 600; }
