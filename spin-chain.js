@@ -21,7 +21,7 @@
     axisLabelY: 174, footerY: 197, samples: 90, frequencyMax: 3,
     timeWindow: 10, timeScale: 2.5, ballisticSlope: 0.35,
     ohmicDc: 0.4, ohmicRate: 1.2, subohmicExponent: 0.5,
-    afmDamping: 0.8, afmFrequency: 2, currentSpeed: 45,
+    afmDamping: 0.8, afmFrequency: 2, currentSpeed: 45, ballisticSpeed: 28, ohmicOpacity: 0.9,
     currentHead: 4, currentThreshold: 0.005, markerSize: 4,
     currentColor: '#efa3ef', gradientColor: '#c2a5ef'
   };
@@ -36,6 +36,7 @@
   const responseCtx = responseCanvas.getContext('2d');
   responseCtx.scale(S.resolution, S.resolution);
   const probe = document.getElementById('spin-probe');
+  const responsePanel = document.getElementById('spin-response-panel');
   const responseStatus = document.getElementById('spin-response-status');
   const currentReadout = document.getElementById('spin-current');
   const panel = document.getElementById('langevin');
@@ -189,7 +190,9 @@
     const current = stepCurrent(responseRegime(), probeTime);
     if (Math.abs(current) < R.currentThreshold) return;
     const direction = Math.sign(current);
-    ctx.globalAlpha = Math.min(1, Math.abs(current));
+    ctx.globalAlpha = responseRegime() === 'ohmic'
+      ? R.ohmicOpacity * Math.min(1, Math.abs(current) / R.ohmicDc)
+      : Math.min(1, Math.abs(current));
     for (let i = 0; i < S.sites - 1; i++) {
       const fraction = ((currentPhase % 1) + 1) % 1;
       const x = S.left + S.spacing * (i + fraction);
@@ -266,7 +269,11 @@
     previous = now;
     if (probeOn && !paused) {
       probeTime += dt * R.timeScale;
-      currentPhase += stepCurrent(responseRegime(), probeTime) * R.currentSpeed * dt / S.spacing;
+      const current = stepCurrent(responseRegime(), probeTime);
+      // Bound only the visual speed; the ballistic current itself keeps growing.
+      const speed = responseRegime() === 'ballistic'
+        ? R.ballisticSpeed * Math.tanh(current) : R.currentSpeed * current;
+      currentPhase += speed * dt / S.spacing;
     }
     const step = reduced ? 1 : Math.min(1, dt * S.transitionRate);
     blend += (Number(fieldOn) - blend) * step;
@@ -372,6 +379,8 @@
       currentPhase = 0;
       previousRegime = regime;
     }
+    responsePanel.hidden = !probeOn;
+    probe.setAttribute('aria-expanded', String(probeOn));
     probe.setAttribute('aria-pressed', String(probeOn));
     document.getElementById('spin-probe-state').textContent = probeOn ? 'ON' : 'OFF';
     const description = regime === 'ballistic'

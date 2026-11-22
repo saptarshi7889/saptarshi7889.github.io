@@ -225,3 +225,5 @@ figcaption { font-size: 7px; letter-spacing: .1em; margin-top: 14px; color: var(
 }
 
 #spin-dc { margin: 1rem 0; text-align: center; font-weight: 600; }
+
+#spin-response-panel[hidden] { display: none; }
