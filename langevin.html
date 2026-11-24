@@ -20,14 +20,14 @@
     <h1>Open Quantum System</h1>
         <div class="spin-demo">
           <div class="spin-field-control">
-            <button id="spin-coupling" type="button" aria-pressed="false" aria-controls="spin-scene spin-results">Bath-chain coupling<span id="spin-coupling-state">OFF</span></button>
+            <button id="spin-coupling" type="button" aria-pressed="false" aria-controls="spin-scene spin-results spin-order-panel">Bath-chain coupling<span id="spin-coupling-state">OFF</span></button>
             <div class="spin-strength-control">
               <label for="spin-strength">Coupling strength</label>
               <input id="spin-strength" type="range" aria-describedby="spin-strength-note" aria-controls="spin-scene">
               <div class="spin-strength-scale"><span>Weak</span><span id="spin-critical">Critical</span><span>Strong</span></div>
             </div>
             <button id="spin-bath" type="button" aria-pressed="false" aria-controls="spin-results">Bath type<span id="spin-bath-state">Ohmic</span></button>
-            <button id="spin-field" type="button" aria-pressed="false" aria-controls="spin-scene spin-results">External magnetic field<span id="spin-field-state">OFF</span></button>
+            <button id="spin-field" type="button" aria-pressed="false" aria-controls="spin-scene spin-results spin-order-panel">External magnetic field<span id="spin-field-state">OFF</span></button>
             <button id="spin-probe" type="button" aria-pressed="false" aria-expanded="false" aria-controls="spin-scene spin-response-panel">Weak field gradient<span id="spin-probe-state">OFF</span></button>
             <p id="spin-order">Uncoupled · freely rotating 3D spins</p>
           </div>
@@ -46,6 +46,24 @@
           </div>
         </div>
         <p class="impurity-note" id="spin-strength-note">Illustrative spin configurations, not a calculated phase diagram. The critical coupling and response curves are schematic, at T = 0. Bond chevrons show transport of Sᶻ, not motion of the spins. The weak field gradient is a separate linear-response probe; current and time use arbitrary units. Above it, connected spins develop magnetic order; disconnected spins rotate freely.</p>
+    <section id="spin-order-panel" class="order-parameter-panel" aria-labelledby="spin-order-title" hidden>
+      <h2 id="spin-order-title">Order parameter and system size</h2>
+      <p id="spin-order-context"></p>
+      <div class="order-parameter-grid">
+        <figure data-order-phase="ll">
+          <h3>Luttinger liquid <span data-order-current hidden>Current phase</span></h3>
+          <img id="spin-order-ll" width="650" height="520" alt="">
+          <figcaption>The amplitude vanishes as the system size increases.</figcaption>
+        </figure>
+        <figure data-order-phase="ordered">
+          <h3><span id="spin-ordered-title">Antiferromagnet</span> <span data-order-current hidden>Current phase</span></h3>
+          <img id="spin-order-ordered" width="650" height="520" alt="">
+          <figcaption>The amplitude approaches a nonzero value as the system size increases.</figcaption>
+        </figure>
+      </div>
+      <p class="impurity-note" id="spin-order-note"></p>
+      <p>Original data and fits: <a id="spin-order-source" href="https://arxiv.org/abs/2312.13095">Antiferromagnetic order enhanced by local dissipation</a>.</p>
+    </section>
     <section class="spin-results" id="spin-results" aria-label="Selected Monte Carlo study" aria-live="polite">
         <div class="spin-result" data-spin-result="antiferromagnet">
     <p class="protocol-intro">For more details, check <a href="https://arxiv.org/abs/2312.13095">Antiferromagnetic order enhanced by local dissipation</a></p>

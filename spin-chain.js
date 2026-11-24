@@ -25,6 +25,12 @@
     currentHead: 4, currentThreshold: 0.005, markerSize: 4, subohmicArrowDuration: 3,
     currentColor: '#efa3ef', gradientColor: '#c2a5ef'
   };
+  const ORDER_STUDIES = {
+    'afm-ohmic': { title: 'Antiferromagnetic order enhanced by local dissipation', paper: '2312.13095', parameters: 'Ohmic bath · zero magnetic field · K = 0.65, g = 0.5 · α = 0.5 (LL), 6 (AFM)' },
+    'afm-subohmic': { title: 'Antiferromagnetic order enhanced by local dissipation', paper: '2312.13095', parameters: 'Subohmic bath · zero magnetic field · s = 0.5, K = 1, g = 0 · α = 1 (LL), 5 (AFM)' },
+    'sdw-ohmic': { title: 'Bath-induced phase transition in a Luttinger liquid', paper: '2210.01590', parameters: 'Ohmic bath · finite magnetization · K = 0.75 · α = 1 (LL), 8 (SDW)' },
+    'sdw-subohmic': { title: 'Localization induced by spatially uncorrelated subohmic baths in one dimension', paper: '2307.07989', parameters: 'Subohmic bath · finite magnetization · s = 0.5, K = 1 · α = 2 (LL), 6 (SDW)' }
+  };
   const canvas = document.getElementById('spin-canvas');
   canvas.width = S.width * S.resolution;
   canvas.height = S.height * S.resolution;
@@ -373,7 +379,36 @@
         ? 'Above critical: the connected chain develops magnetic order. The corresponding paper is linked below.'
         : `${relativeStrength}: connected spins fluctuate without long-range order. Increase coupling strength above critical to order the chain.`;
     updateResults();
+    updateOrderPlots();
     updateResponse();
+  }
+  function updateOrderPlots() {
+    const orderPanel = document.getElementById('spin-order-panel');
+    orderPanel.hidden = !coupled;
+    if (!coupled) return;
+    const key = `${fieldOn ? 'sdw' : 'afm'}-${subohmic ? 'subohmic' : 'ohmic'}`;
+    const selected = ORDER_STUDIES[key];
+    const orderedPhase = fieldOn ? 'Spin density wave' : 'Antiferromagnet';
+    document.getElementById('spin-order-context').textContent = selected.parameters;
+    document.getElementById('spin-ordered-title').textContent = orderedPhase;
+    const source = document.getElementById('spin-order-source');
+    source.href = `https://arxiv.org/abs/${selected.paper}`;
+    source.textContent = selected.title;
+    document.querySelectorAll('[data-order-phase]').forEach(figure => {
+      const phase = figure.dataset.orderPhase;
+      const current = (phase === 'ordered') === isOrdered();
+      figure.dataset.current = String(current);
+      figure.querySelector('[data-order-current]').hidden = !current;
+      const image = document.getElementById(`spin-order-${phase}`);
+      const path = `media/order-parameters/${key}-${phase}.svg`;
+      if (image.getAttribute('src') !== path) image.setAttribute('src', path);
+      image.alt = `${phase === 'll' ? 'Luttinger liquid' : orderedPhase}: amplitude versus system size, with original paper data, fit curves, and fit annotations. ${selected.parameters}.`;
+    });
+    document.getElementById('spin-order-note').textContent =
+      'Representative simulations from the paper, with original data, scales, and fits retained; the schematic slider does not interpolate these data. '
+      + (key === 'sdw-ohmic'
+        ? 'This paper plots the first harmonic ⟨cos φ⟩, with LL fit L^(−Kᵣ/4), rather than ⟨cos 2φ⟩; its original observable and normalization are retained.'
+        : 'Amplitude is shown in the paper’s dimensionless ⟨cos[2(φ − φCoM)]⟩ order-parameter normalization.');
   }
   function updateResponse() {
     const regime = responseRegime();

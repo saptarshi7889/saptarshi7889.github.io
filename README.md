@@ -67,3 +67,12 @@ arrays are included; the large original simulation archives remain external.
 Run render/load commands from `media/quenched/` using the existing animation
 environment. Bytecode caches are ignored by Git. Rerendering replaces media
 files, so inspect the output before committing and pushing the website.
+
+Order-parameter figures in `media/order-parameters/` preserve the original vector data, axes scales, and fit annotations, with presentation labels replaced. Sources:
+
+- `afm-subohmic-*`: right column of `figure_larger_size.pdf`, main numerical-results figure in [Antiferromagnetic order enhanced by local dissipation](https://arxiv.org/abs/2312.13095).
+- `afm-ohmic-*`: right column of `ohmic_figure.pdf`, Ohmic numerical-results figure in the same paper's appendix.
+- `sdw-subohmic-*`: right column of `figures/results.pdf` in [Localization induced by spatially uncorrelated subohmic baths in one dimension](https://arxiv.org/abs/2307.07989).
+- `sdw-ohmic-*`: right column of `figures/panel.pdf` in [Bath-induced phase transition in a Luttinger liquid](https://arxiv.org/abs/2210.01590). This source measures the first harmonic ⟨cos φ⟩, not ⟨cos 2φ⟩; the displayed note preserves this distinction.
+
+Both phases appear when bath-chain coupling is on. Bath and magnetic-field controls select the paper panels; the schematic strength slider highlights a phase without interpolating the published data. Amplitudes retain the original dimensionless order-parameter normalization.
