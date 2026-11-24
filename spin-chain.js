@@ -391,9 +391,6 @@
     const orderedPhase = fieldOn ? 'Spin density wave' : 'Antiferromagnet';
     document.getElementById('spin-order-context').textContent = selected.parameters;
     document.getElementById('spin-ordered-title').textContent = orderedPhase;
-    const source = document.getElementById('spin-order-source');
-    source.href = `https://arxiv.org/abs/${selected.paper}`;
-    source.textContent = selected.title;
     document.querySelectorAll('[data-order-phase]').forEach(figure => {
       const phase = figure.dataset.orderPhase;
       const current = (phase === 'ordered') === isOrdered();

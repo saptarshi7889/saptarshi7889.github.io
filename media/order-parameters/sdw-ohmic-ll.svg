@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 650 520" role="img"><title>sdw-ohmic: Luttinger liquid, original paper data and fits</title><rect width="650" height="520" fill="white" /><svg width="520" height="417.57575757575756" viewBox="625.92 38.4 295.68 237.44" x="100" y="20">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 650 475" role="img"><title>sdw-ohmic: Luttinger liquid, original paper data and fits</title><rect width="650" height="475" fill="white" /><svg width="470" height="340" viewBox="677.76 51.2 234.88 192.64000000000001" x="150" y="42" preserveAspectRatio="none">
 <defs>
 <clipPath id="clip-0">
 <path clip-rule="nonzero" d="M 0 0 L 959.761719 0 L 959.761719 540 L 0 540 Z M 0 0 " />
@@ -51,4 +51,4 @@
 <g clip-path="url(#clip-6)">
 <use xlink:href="#source-20" transform="matrix(0.209572, 0, 0, 0.209599, 627.4097, 279.83306)" />
 </g>
-<rect x="755.2" y="252.8" width="21.76" height="23.04" fill="white" /><rect x="633.6" y="92.8" width="35.84" height="137.6" fill="white" /></svg><text font-family="Arial, sans-serif" font-size="20" fill="#183f48" text-anchor="middle" x="26" y="245" transform="rotate(-90 26 245)">amplitude of the spin density wave</text><text font-family="Arial, sans-serif" font-size="20" fill="#183f48" text-anchor="middle" x="360.0" y="498">system size</text></svg>
+<rect x="755.2" y="252.8" width="21.76" height="23.04" fill="white" /><rect x="633.6" y="92.8" width="35.84" height="137.6" fill="white" /></svg><text x="385.0" y="454" font-family="Arial, sans-serif" font-size="25" fill="#183f48" text-anchor="middle">system size</text><text x="30" y="212" font-family="Arial, sans-serif" font-size="25" fill="#183f48" text-anchor="middle" transform="rotate(-90 30 212)"><tspan x="30" dy="0">amplitude of the spin density wave</tspan><tspan x="30" dy="1.15em">(order parameter)</tspan></text><text x="138" y="97.10852713178295" font-size="23" font-family="Arial, sans-serif" text-anchor="end" fill="#183f48">0.550</text><text x="138" y="389.6666666666667" font-size="23" font-family="Arial, sans-serif" text-anchor="end" fill="#183f48">0.300</text><text x="426.62125340599454" y="414" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" fill="#183f48">100</text><rect x="150" y="42" width="470" height="340" fill="none" stroke="#142c35" stroke-width="1" /></svg>
